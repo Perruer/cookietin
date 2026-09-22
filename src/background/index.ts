@@ -4,6 +4,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import { ext } from "../shared/api";
+import { migrateLegacyStorage } from "../shared/backup";
 import { cleanAll } from "../shared/cleanup";
 import { setCookie, type Cookie } from "../shared/cookies";
 import { getProtected, isProtected } from "../shared/protect";
@@ -27,7 +28,12 @@ ext.alarms.onAlarm.addListener(async alarm => {
 
 onSettingsChanged(s => void scheduleCleanup(s));
 
-ext.runtime.onInstalled.addListener(async () => {
+ext.runtime.onInstalled.addListener(async details => {
+  // Updated in place from Cookie Quick Manager (Firefox build with its ID):
+  // convert its settings and tell the user what happened.
+  if (details.reason === "update" && (await migrateLegacyStorage())) {
+    await ext.tabs.create({ url: ext.runtime.getURL("options/options.html#welcome") });
+  }
   await scheduleCleanup(await getSettings());
 });
 

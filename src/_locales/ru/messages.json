@@ -682,6 +682,26 @@
   "migrateText": {
     "message": "Переходите с Cookie Quick Manager? В его настройках нажмите «Backup user data» и восстановите файл здесь: защищённые cookie и настройки перенесутся."
   },
+  "welcomeTitle": {
+    "message": "Cookie Quick Manager теперь называется CookieTin"
+  },
+  "welcomeText": {
+    "message": "Дополнение переписано для современного Firefox и переименовано. Ваши настройки и защищённые cookie сохранены (защищённых cookie: $P1$).",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "welcomeNew": {
+    "message": "Новое: меню кнопки снова работает, изолированные cookie удаляются, правильный cookies.txt, выбор нескольких cookie, отмена удаления, тёмная тема и очистка по расписанию."
+  },
+  "welcomeOk": {
+    "message": "Понятно"
+  },
+  "welcomeChanges": {
+    "message": "Все изменения"
+  },
   "supportTitle": {
     "message": "Поддержать CookieTin"
   },

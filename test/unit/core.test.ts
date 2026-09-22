@@ -190,3 +190,16 @@ test("value tools", () => {
   assert.deepEqual(decodeJwt(jwt)?.payload, { sub: "42" });
   assert.equal(decodeJwt("abc"), null);
 });
+
+test("Cookie Quick Manager settings map to CookieTin settings", async () => {
+  const { legacySettings } = await import("../../src/shared/backup");
+  assert.deepEqual(legacySettings({
+    delete_all_on_restart: true, prevent_protected_cookies_deletion: false, open_in_new_tab: false,
+    display_deletion_alert: false, template: "NETSCAPE", auto_actualize_checkbox: true, addonSize: { width: 1300, height: 820 }, skin: "default"
+  }), {
+    deleteOnStartup: true, guardProtected: false, openIn: "window", confirmBulk: false,
+    exportFormat: "netscape", autoRefresh: true, windowWidth: 1300, windowHeight: 820
+  });
+  assert.deepEqual(legacySettings({ open_in_new_tab: true, template: "JSON" }), { openIn: "tab", exportFormat: "json" });
+  assert.deepEqual(legacySettings({}), {});
+});

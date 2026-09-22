@@ -6,7 +6,7 @@
 import { render } from "preact";
 import { useEffect, useState } from "preact/hooks";
 import { ext, isFirefox, t } from "../shared/api";
-import { restoreBackup } from "../shared/backup";
+import { MIGRATED_KEY, restoreBackup } from "../shared/backup";
 import { countProtected, getProtected, onProtectedChanged, saveProtected, withProtection, type ProtectedMap } from "../shared/protect";
 import { getSettings, type ExportFormat, type Settings } from "../shared/settings";
 import { Footer, SupportSection, downloadText, localizePage, pickTextFile, useSettings, useTheme } from "../ui/common";
@@ -63,11 +63,13 @@ function Options() {
   const [protectedCount, setProtectedCount] = useState(0);
   const [status, setStatus] = useState<{ text: string; error?: boolean }>({ text: "" });
   const [privateAllowed, setPrivateAllowed] = useState<boolean | null>(null);
+  const [migrated, setMigrated] = useState<number | null>(null);
 
   useEffect(() => {
     void getProtected().then(m => setProtectedCount(countProtected(m)));
     const off = onProtectedChanged(m => setProtectedCount(countProtected(m)));
     ext.extension.isAllowedIncognitoAccess().then(setPrivateAllowed, () => setPrivateAllowed(null));
+    void ext.storage.local.get(MIGRATED_KEY).then(got => typeof got[MIGRATED_KEY] === "number" && setMigrated(got[MIGRATED_KEY] as number));
     if (location.hash) setTimeout(() => document.querySelector(location.hash)?.scrollIntoView(), 50);
     return off;
   }, []);
@@ -107,6 +109,21 @@ function Options() {
           <a href="#support">♥ {t("support")}</a>
         </div>
       </header>
+
+      {migrated !== null && (
+        <section class="card hi" id="welcome">
+          <h2>{t("welcomeTitle")}</h2>
+          <p>{t("welcomeText", migrated)}</p>
+          <p class="muted">{t("welcomeNew")}</p>
+          <div class="row">
+            <button id="welcome-ok" onClick={() => {
+              void ext.storage.local.remove(MIGRATED_KEY);
+              setMigrated(null);
+            }}>{t("welcomeOk")}</button>
+            <a href="https://github.com/Perruer/cookietin/blob/main/CHANGELOG.md" target="_blank" rel="noopener">{t("welcomeChanges")}</a>
+          </div>
+        </section>
+      )}
 
       <section class="card">
         <h2>{t("secCleanup")}</h2>

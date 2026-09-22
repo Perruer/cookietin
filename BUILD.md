@@ -41,12 +41,19 @@ Third-party code in the bundles: Preact 10 (MIT). The `innerHTML` assignments re
 `web-ext lint` are inside Preact's `dangerouslySetInnerHTML` support, which CookieTin never uses.
 The container icons in `icons/containers/` are Mozilla's (MPL-2.0).
 
+## Build with the Cookie Quick Manager add-on ID
+
+`npm run package:cqm` (`node scripts/build.mjs --cqm`) builds the same code with the add-on ID of
+the Cookie Quick Manager listing, for shipping CookieTin as its update. See
+[store/amo-cqm-handover.md](store/amo-cqm-handover.md).
+
 ## Tests
 
 ```bash
 npm test          # unit tests (node:test via tsx)
 npm run lint      # web-ext lint of dist/firefox
 npm run test:e2e  # end-to-end tests in Chrome for Testing and Firefox (local test page only)
+npm run test:upgrade  # Cookie Quick Manager 0.5rc2 → CookieTin update in Firefox
 ```
 
 `npm run media` regenerates the screenshots and the demo GIF (needs ffmpeg for the GIF).

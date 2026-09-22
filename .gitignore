@@ -1,4 +1,7 @@
 node_modules/
 dist/
 dist-e2e/
+dist-cqm/
+dist-e2e-cqm/
+dist-e2e-legacy/
 *.log

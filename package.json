@@ -40,7 +40,9 @@
     "start:chrome": "node scripts/build.mjs && web-ext run --source-dir dist/chrome -t chromium",
     "media": "node scripts/media.mjs",
     "promo": "node scripts/promo.mjs",
-    "package": "node scripts/build.mjs && web-ext build -s dist/chrome -a dist --filename cookietin-chrome-{version}.zip -o && web-ext build -s dist/firefox -a dist --filename cookietin-firefox-{version}.zip -o && node scripts/source-zip.mjs"
+    "package": "node scripts/build.mjs && web-ext build -s dist/chrome -a dist --filename cookietin-chrome-{version}.zip -o && web-ext build -s dist/firefox -a dist --filename cookietin-firefox-{version}.zip -o && node scripts/source-zip.mjs",
+    "package:cqm": "node scripts/build.mjs --cqm && web-ext build -s dist-cqm/firefox -a dist-cqm --filename cookietin-as-cqm-firefox-{version}.zip -o",
+    "test:upgrade": "node test/e2e/upgrade.mjs"
   },
   "devDependencies": {
     "@types/chrome": "^0.3.0",

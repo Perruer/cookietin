@@ -682,6 +682,26 @@
   "migrateText": {
     "message": "Moving from Cookie Quick Manager? In its settings click “Backup user data”, then restore that file here: your protected cookies and settings come along."
   },
+  "welcomeTitle": {
+    "message": "Cookie Quick Manager is now CookieTin"
+  },
+  "welcomeText": {
+    "message": "The add-on was rewritten for current Firefox and renamed. Your settings and protected cookies were kept (protected cookies: $P1$).",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "welcomeNew": {
+    "message": "New: the toolbar menu works again, partitioned cookies can be deleted, correct cookies.txt, multiple selection, Undo, dark theme and periodic cleanup."
+  },
+  "welcomeOk": {
+    "message": "Got it"
+  },
+  "welcomeChanges": {
+    "message": "All changes"
+  },
   "supportTitle": {
     "message": "Support CookieTin"
   },

@@ -682,6 +682,26 @@
   "migrateText": {
     "message": "Vous venez de Cookie Quick Manager ? Dans ses paramètres, cliquez « Sauvegarder les données », puis restaurez le fichier ici."
   },
+  "welcomeTitle": {
+    "message": "Cookie Quick Manager s’appelle désormais CookieTin"
+  },
+  "welcomeText": {
+    "message": "Le module a été réécrit pour le Firefox actuel et renommé. Vos paramètres et cookies protégés sont conservés (cookies protégés : $P1$).",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "welcomeNew": {
+    "message": "Nouveau : le menu fonctionne à nouveau, cookies partitionnés supprimables, cookies.txt correct, sélection multiple, Annuler, thème sombre et nettoyage régulier."
+  },
+  "welcomeOk": {
+    "message": "Compris"
+  },
+  "welcomeChanges": {
+    "message": "Toutes les modifications"
+  },
   "supportTitle": {
     "message": "Soutenir CookieTin"
   },

@@ -253,6 +253,23 @@ const M = {
     "Vous venez de Cookie Quick Manager ? Dans ses paramètres, cliquez « Sauvegarder les données », puis restaurez le fichier ici."
   ],
 
+  // Upgrade from Cookie Quick Manager
+  welcomeTitle: ["Cookie Quick Manager is now CookieTin", "Cookie Quick Manager теперь называется CookieTin", "Cookie Quick Manager heißt jetzt CookieTin", "Cookie Quick Manager s’appelle désormais CookieTin"],
+  welcomeText: [
+    "The add-on was rewritten for current Firefox and renamed. Your settings and protected cookies were kept (protected cookies: $1).",
+    "Дополнение переписано для современного Firefox и переименовано. Ваши настройки и защищённые cookie сохранены (защищённых cookie: $1).",
+    "Das Add-on wurde für aktuelles Firefox neu geschrieben und umbenannt. Einstellungen und geschützte Cookies bleiben erhalten (geschützte Cookies: $1).",
+    "Le module a été réécrit pour le Firefox actuel et renommé. Vos paramètres et cookies protégés sont conservés (cookies protégés : $1)."
+  ],
+  welcomeNew: [
+    "New: the toolbar menu works again, partitioned cookies can be deleted, correct cookies.txt, multiple selection, Undo, dark theme and periodic cleanup.",
+    "Новое: меню кнопки снова работает, изолированные cookie удаляются, правильный cookies.txt, выбор нескольких cookie, отмена удаления, тёмная тема и очистка по расписанию.",
+    "Neu: das Menü funktioniert wieder, partitionierte Cookies lassen sich löschen, korrekte cookies.txt, Mehrfachauswahl, Rückgängig, dunkles Design und regelmäßiges Aufräumen.",
+    "Nouveau : le menu fonctionne à nouveau, cookies partitionnés supprimables, cookies.txt correct, sélection multiple, Annuler, thème sombre et nettoyage régulier."
+  ],
+  welcomeOk: ["Got it", "Понятно", "Verstanden", "Compris"],
+  welcomeChanges: ["All changes", "Все изменения", "Alle Änderungen", "Toutes les modifications"],
+
   // Support & about
   supportTitle: ["Support CookieTin", "Поддержать CookieTin", "CookieTin unterstützen", "Soutenir CookieTin"],
   supportText: [

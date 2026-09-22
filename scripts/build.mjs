@@ -5,6 +5,8 @@
 //   node scripts/build.mjs            production build
 //   node scripts/build.mjs --watch    rebuild on changes
 //   node scripts/build.mjs --e2e      dist-e2e/, keeps the E2E test hooks
+//   node scripts/build.mjs --cqm      dist-cqm/firefox with Cookie Quick Manager's add-on ID,
+//                                     to ship CookieTin as an update of that AMO listing
 import * as esbuild from "esbuild";
 import { cp, mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
@@ -14,10 +16,13 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const src = path.join(root, "src");
 const watch = process.argv.includes("--watch");
 const e2e = process.argv.includes("--e2e");
-const outRoot = path.join(root, e2e ? "dist-e2e" : "dist");
+const cqm = process.argv.includes("--cqm");
+const outRoot = path.join(root, (e2e ? "dist-e2e" : "dist") + (cqm ? "-cqm" : ""));
 
 const pkg = JSON.parse(await readFile(path.join(root, "package.json"), "utf8"));
-const GECKO_ID = "{80cc9392-1f34-433b-9a62-1b4e67b740d4}";
+const GECKO_ID = cqm
+  ? "{60f82f00-9ad5-4de5-b31c-b16a47c51558}" // Cookie Quick Manager on AMO
+  : "{80cc9392-1f34-433b-9a62-1b4e67b740d4}";
 
 const entries = {
   "background": "background/index.ts",
@@ -36,7 +41,7 @@ const STATIC = [
   "options/options.html", "options/options.css"
 ];
 
-const manifests = {
+const allManifests = {
   chrome: m => ({
     ...m,
     background: { service_worker: "background.js" },
@@ -58,6 +63,9 @@ const manifests = {
     }
   })
 };
+
+// The Cookie Quick Manager listing exists only on AMO.
+const manifests = cqm ? { firefox: allManifests.firefox } : allManifests;
 
 async function writeStatic() {
   const base = JSON.parse(await readFile(path.join(src, "manifest.json"), "utf8"));
@@ -99,5 +107,5 @@ if (watch) {
   console.log("watching src/ …");
 } else {
   await Promise.all(Object.keys(manifests).map(target => esbuild.build(options(target))));
-  console.log(`built ${path.relative(root, outRoot)}/chrome and /firefox (v${pkg.version})`);
+  console.log(`built ${Object.keys(manifests).map(t => path.relative(root, path.join(outRoot, t))).join(", ")} (v${pkg.version})`);
 }

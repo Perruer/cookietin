@@ -10,6 +10,7 @@ Regenerate packages with `npm run package`, screenshots and GIF with `npm run me
 | `../dist/cookietin-source-1.0.0.zip` | Source code for the AMO review (**required**: the code is bundled), with BUILD.md |
 | [amo.md](amo.md) | AMO listing: texts EN/RU, categories, screenshots, reviewer notes |
 | [edge.md](edge.md) | Edge listing: texts EN/RU, search terms, images, certification notes |
+| [amo-cqm-handover.md](amo-cqm-handover.md) | Only if Ysard hands over the Cookie Quick Manager listing: build with its ID, upload steps |
 | [github-release-v1.0.0.md](github-release-v1.0.0.md) | GitHub Release text |
 | `logo-300.png`, `promo-*.png` | Store images |
 | `../docs/screenshots/{en,ru}/` | Screenshots 1280×800 |
