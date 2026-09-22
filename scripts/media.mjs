@@ -1,10 +1,11 @@
 // Takes the README / store screenshots (1280×800, EN and RU) with fictional
 // demo cookies. Nothing is sent anywhere: the "sites" are a local server.
 //
-//   node scripts/media.mjs
+//   node scripts/media.mjs            screenshots + demo GIF (needs ffmpeg for the GIF)
+//   node scripts/media.mjs --no-gif
 import http from "node:http";
-import { spawnSync } from "node:child_process";
-import { mkdir } from "node:fs/promises";
+import { execFileSync, spawnSync } from "node:child_process";
+import { mkdir, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import puppeteer from "puppeteer";
@@ -178,6 +179,97 @@ async function scenes(lang) {
   }
 }
 
-await scenes("en");
-await scenes("ru");
+const CURSOR = `<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path d="M5 3l14 8-6 1.6L10 19z" fill="#111" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg>`;
+
+/** Demo GIF: search, decode a value, save, protect a cookie. */
+async function gif() {
+  const tmp = path.join(root, "dist-e2e/gif");
+  await rm(tmp, { recursive: true, force: true });
+  await mkdir(tmp, { recursive: true });
+  const { browser, base } = await launch("en");
+  try {
+    for (const p of await browser.pages()) if (p.url() === "about:blank") await p.close().catch(() => {});
+    const page = await open(browser, `${base}/manager/manager.html`);
+    const exp = Math.floor(Date.now() / 1000) + 180 * 86400;
+    await page.evaluate(async list => {
+      for (const d of list) await chrome.cookies.set(d);
+    }, demoCookies(exp).map(d => JSON.parse(JSON.stringify(d))));
+    await page.reload();
+    await sleep(900);
+    await page.evaluate(svg => {
+      const c = document.createElement("div");
+      c.id = "fake-cursor";
+      c.innerHTML = svg;
+      Object.assign(c.style, { position: "fixed", left: "640px", top: "600px", zIndex: "2147483647", pointerEvents: "none" });
+      document.documentElement.appendChild(c);
+    }, CURSOR);
+
+    const frames = [];
+    let mouse = { x: 640, y: 600 };
+    const frame = async duration => {
+      await page.evaluate(() => document.documentElement.appendChild(document.getElementById("fake-cursor")));
+      const file = path.join(tmp, `f${String(frames.length).padStart(3, "0")}.png`);
+      await page.screenshot({ path: file, captureBeyondViewport: false });
+      frames.push({ file, duration });
+    };
+    const move = async (x, y, steps = 8) => {
+      const from = mouse;
+      for (let i = 1; i <= steps; i++) {
+        const p = { x: from.x + (x - from.x) * i / steps, y: from.y + (y - from.y) * i / steps };
+        await page.mouse.move(p.x, p.y);
+        await page.evaluate(p => Object.assign(document.getElementById("fake-cursor").style, { left: `${p.x - 3}px`, top: `${p.y - 2}px` }), p);
+        await frame(0.05);
+      }
+      mouse = { x, y };
+    };
+    const center = sel => page.evaluate(s => {
+      const el = [...document.querySelectorAll(s.css)].find(e => !s.text || e.textContent.includes(s.text));
+      const b = el.getBoundingClientRect();
+      return { x: b.left + b.width / 2, y: b.top + b.height / 2 };
+    }, typeof sel === "string" ? { css: sel } : sel);
+    const clickAt = async (sel, steps = 8, pause = 350) => {
+      const c = await center(sel);
+      await move(c.x, c.y, steps);
+      await page.mouse.click(c.x, c.y);
+      await sleep(pause);
+    };
+
+    await frame(1.0);
+    await clickAt("#search", 8, 150);
+    for (const ch of "github") {
+      await page.keyboard.type(ch);
+      await sleep(60);
+      await frame(0.12);
+    }
+    await sleep(300);
+    await frame(0.7);
+    await clickAt(`#cookie-list li[data-name="color_mode"]`);
+    await frame(1.1);
+    await clickAt({ css: ".tools button", text: "URL decode" });
+    await frame(1.3);
+    await clickAt("#save", 8, 500);
+    await frame(1.0);
+    await clickAt(`#cookie-list li[data-name="user_session"]`);
+    await frame(0.8);
+    await clickAt("#protect", 8, 500);
+    await frame(2.6);
+
+    const list = frames.map(f => `file '${f.file.replaceAll("\\", "/")}'\nduration ${f.duration}`).join("\n") +
+      `\nfile '${frames.at(-1).file.replaceAll("\\", "/")}'\n`;
+    await writeFile(path.join(tmp, "frames.txt"), list);
+    const out = path.join(root, "docs/demo.gif");
+    execFileSync("ffmpeg", ["-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", path.join(tmp, "frames.txt"),
+      "-vf", "scale=960:-1:flags=lanczos,split[a][b];[a]palettegen=max_colors=128:stats_mode=diff[p];[b][p]paletteuse=dither=bayer:bayer_scale=4:diff_mode=rectangle",
+      "-loop", "0", out]);
+    console.log(`wrote docs/demo.gif (${frames.length} frames)`);
+  } finally {
+    await browser.close();
+  }
+}
+
+if (!process.argv.includes("--gif-only")) {
+  await scenes("en");
+  await scenes("ru");
+}
+if (!process.argv.includes("--no-gif")) await gif();
 server.close();
