@@ -39,6 +39,7 @@
     "start:firefox": "node scripts/build.mjs && web-ext run --source-dir dist/firefox",
     "start:chrome": "node scripts/build.mjs && web-ext run --source-dir dist/chrome -t chromium",
     "media": "node scripts/media.mjs",
+    "promo": "node scripts/promo.mjs",
     "package": "node scripts/build.mjs && web-ext build -s dist/chrome -a dist --filename cookietin-chrome-{version}.zip -o && web-ext build -s dist/firefox -a dist --filename cookietin-firefox-{version}.zip -o && node scripts/source-zip.mjs"
   },
   "devDependencies": {
