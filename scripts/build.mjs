@@ -68,7 +68,7 @@ async function writeStatic() {
       await cp(path.join(src, rel), path.join(out, rel), { recursive: true });
     }
     // The GPL text and third-party notices travel with the package.
-    for (const file of ["LICENSE", "THIRD_PARTY_NOTICES.md"]) await cp(path.join(root, file), path.join(out, file));
+    for (const file of ["LICENSE", "COPYRIGHT", "THIRD_PARTY_NOTICES.md"]) await cp(path.join(root, file), path.join(out, file));
     const manifest = patch({ ...base, version: pkg.version });
     await writeFile(path.join(out, "manifest.json"), JSON.stringify(manifest, null, 2) + "\n");
   }
