@@ -1,638 +1,706 @@
 {
-  "extensionDescription": {
-    "message": "Un gestionnaire de cookies pour les visualiser, les rechercher, les éditer, les ajouter, les supprimer, les sauvegarder ou les restaurer.",
-    "description": "Description of the extension."
-  },
-
-  "domainsListTitle": {
-    "message": "Domaines",
-    "description": "Title of the list that displays domains."
-  },
-
-  "cookiesListTitle": {
-    "message": "Cookies",
-    "description": "Title of the list that displays cookies."
-  },
-
-  "detailsPanelTitle": {
-    "message": "Détails",
-    "description": "Title of the list that displays details for cookies."
-  },
-
-  "cDomain": {
-    "message": "Domaine ",
-    "description": "Attribute of a cookie in the details panel."
-  },
-
-  "cFpiDomain": {
-    "message": "First-Party ",
-    "description": "Attribute of a cookie in the details panel."
-  },
-
-  "cName": {
-    "message": "Nom ",
-    "description": "Attribute of a cookie in the details panel."
-  },
-
-  "cValue": {
-    "message": "Valeur ",
-    "description": "Attribute of a cookie in the details panel."
-  },
-
-  "cPath": {
-    "message": "Chemin ",
-    "description": "Attribute of a cookie in the details panel."
-  },
-
-  "cStore": {
-    "message": "Contexte ",
-    "description": "Attribute of a cookie in the details panel."
-  },
-
-  "search_domainPlaceholder": {
-    "message": "Chercher un nom de domaine...",
-    "description": "Input field used to search domains by their names."
-  },
-
-  "search_filterPlaceholder": {
-    "message": "Chercher un mot...",
-    "description": "Input field used to filter cookies by their attributes."
-  },
-
-  "filterByAttributeHeader": {
-    "message": "Filtrage avancé des cookies",
-    "description": "Filter dropdown menu header."
-  },
-
-  "filterByAttributeTip": {
-    "message": "Choisissez un item pour ajouter un filtre au formulaire",
-    "description": "Tip sentence below the search form. Width of the text is limited! (the menu may overflow on the left of the screen)."
-  },
-
-   "filterByAttributeNames": {
-    "message": "dans les noms",
-    "description": "Filter dropdown menu item."
-  },
-
-   "filterByAttributeValues": {
-    "message": "dans les valeurs",
-    "description": "Filter dropdown menu item."
-  },
-
-  "checkboxQuerySubdomains": {
-    "message": " Sous-domaines",
-    "description": "Checkbox for search engine used to query subdomains."
-  },
-
-  "selectQueryContexts": {
-    "message": "Contexte(s):",
-    "description": "Text for search engine describing the content of the drop-down list of stores."
-  },
-
-  "checkboxAutoActualize": {
-    "message": " Actualisation automatique",
-    "description": "Checkbox to monitor cookies and refresh the interface."
-  },
-
-  "menu_protect_all": {
-    "message": "Protéger tous les cookies",
-    "description": "Dropdown menu option."
-  },
-
-  "menu_protect_session": {
-    "message": "Protéger tous les cookies de session",
-    "description": "Dropdown menu option."
-  },
-
-  "menu_unprotect_all": {
-    "message": "Déprotéger tous les cookies",
-    "description": "Dropdown menu option."
-  },
-
-  "menu_unprotect_session": {
-    "message": "Déprotéger tous les cookies de session",
-    "description": "Dropdown menu option."
-  },
-
-  "menuHeaderExport": {
-    "message": "Exporter:",
-    "description": "Dropdown menu header."
-  },
-
-  "menuC2Clipboard": {
-    "message": "Copier le cookie vers le presse-papier",
-    "description": "Dropdown menu option."
-  },
-
-  "menuD2Clipboard": {
-    "message": "Copier le domaine vers le presse-papier",
-    "description": "Dropdown menu option."
-  },
-
-  "menuA2Clipboard": {
-    "message": "Tout copier vers le presse-papier",
-    "description": "Dropdown menu option."
-  },
-
-  "menuC2File": {
-    "message": "Enregistrer le cookie dans un fichier",
-    "description": "Dropdown menu option."
-  },
-
-  "menuD2File": {
-    "message": "Enregistrer le domaine dans un fichier",
-    "description": "Dropdown menu option."
-  },
-
-  "menuA2File": {
-    "message": "Tout enregistrer dans un fichier",
-    "description": "Dropdown menu option."
-  },
-
-  "menuHeaderImport": {
-    "message": "Importer:",
-    "description": "Dropdown menu header."
-  },
-
-  "menuRestore": {
-    "message": "Restaurer les cookies depuis un fichier",
-    "description": "Dropdown menu option."
-  },
-
-  "menu_tooltip_dropup_protect": {
-    "message": "Protéger/Déprotéger tous les cookies",
-    "description": "Tooltip for the dropup menu."
-  },
-
-  "menu_tooltip_dropup_export": {
-    "message": "Exporter/Importer",
-    "description": "Tooltip for the dropup menu."
-  },
-
-  "buttonClose": {
-    "message": "Fermer",
-    "description": "Close button on modal popovers and contextual menus."
-  },
-
-  "buttonContinue": {
-    "message": "Continuer",
-    "description": "Continue button on modal popovers and contextual menus."
-  },
-
-
-
-
-  "contextMenu_domain_copy2Clipboard": {
-    "message": "Copier vers le presse-papier",
-    "description": "Option for the contextual menu that opens on a domain."
-  },
-
-  "contextMenu_domain_copy2File": {
-    "message": "Enregistrer dans un fichier",
-    "description": "Option for the contextual menu that opens on a domain."
-  },
-
-  "contextMenu_domain_protect": {
-    "message": "Protéger",
-    "description": "Option for the contextual menu that opens on a domain."
-  },
-
-  "contextMenu_domain_unprotect": {
-    "message": "Déprotéger",
-    "description": "Option for the contextual menu that opens on a domain."
-  },
-
-  "contextMenu_domain_protect_session": {
-    "message": "Protéger les cookies de session",
-    "description": "Option for the contextual menu that opens on a domain."
-  },
-
-  "contextMenu_domain_unprotect_session": {
-    "message": "Déprotéger les cookies de session",
-    "description": "Option for the contextual menu that opens on a domain."
-  },
-
-  "contextMenu_domain_delete": {
-    "message": "Supprimer",
-    "description": "Option for the contextual menu that opens on a domain."
-  },
-
-  "contextMenu_domain_copy2container": {
-    "message": "Copier vers le container",
-    "description": "Option for the contextual menu that opens on a domain."
-  },
-
-
-
-
-  "container_all": {
-    "message": "Tous",
-    "description": "Name that matches for all the stores in the browser."
-  },
-
-  "container_default": {
-    "message": "Par défaut",
-    "description": "Name of the default store in the browser."
-  },
-
-  "container_private": {
-    "message": "Navigation privée",
-    "description": "Name of the Private browsing store."
-  },
-
-
-
-
-  "tooltip_cDomain": {
-    "message": "Un cookie host-only ne s'applique qu'au domaine courant. Les autres cookies s'appliquent également aux sous-domaines, et leur attribut 'domaine' possède un '.' en en-tête.",
-    "description": ""
-  },
-
-  "tooltip_cFpiDomain": {
-    "message": "L'isolement de la première partie empêche les régies publicitaires et autres sites d'identifier les utilisateurs au cours de leur navigation (voir les options).",
-    "description": "Description of what FPI is."
-  },
-
-  "tooltip_buttonUrl": {
-    "message": "Décodage URL<br>Cliquer pour activer/désactiver.",
-    "description": "Button to change url encoding of the current cookie value."
-  },
-
-  "tooltip_buttonB64": {
-    "message": "Décodage Base64<br>Cliquer pour activer/désactiver.",
-    "description": "Button to change url encoding of the current cookie value."
-  },
-
-  "tooltip_cStore": {
-    "message": "Mode de navigation<br>Sélectionner pour modifier le contexte de navigation du cookie.",
-    "description": "Select menu to modify the context of the current cookie (private/default/etc.)."
-  },
-
-  "tooltip_cSameSite": {
-    "message": "Protection partielle contre les risques liés aux attaques de type CSRF (Cross-Site Request Forgery) et XSSI (Cross-Site Script Inclusion).<br>Le mode 'strict' permet à une application d'avertir le navigateur que le cookie ne doit être utilisé que si la requête provient du son site d'origine et non d'un site tiers.",
-    "description": "Select menu to modify the sameSite cookie flag."
-  },
-
-  "tooltip_cHttpOnly": {
-    "message": "Protection contre le vol<br>Cocher pour forcer l'envoi du cookie sur HTTP ou HTTPS,<br> c.-à-d. que les accès JavaScript seront bloqués dans un contexte de faille XSS.",
-    "description": "Checkbox to change the httpOnly cookie flag."
-  },
-
-  "tooltip_cIsSecure": {
-    "message": "Protection contre le vol<br>Cocher pour forcer l'envoi du cookie uniquement sur des canaux sécurisés comme HTTPS.",
-    "description": "Checkbox to change the isSecure cookie flag."
-  },
-
-  "tooltip_cIsSession": {
-    "message": "Période de validité<br>Cocher pour que ce cookie expire à la fin de la session.",
-    "description": "Checkbox to change the isSession cookie flag."
-  },
-
-  "tooltipQueryFilterInNames": {
-    "message": "Cliquer ici pour rechercher le terme dans les noms des cookies",
-    "description": "Description of the role of the item in the advanced filtering menu."
-  },
-
-  "tooltipQueryFilterInValues": {
-    "message": "Cliquer ici pour rechercher le terme dans les valeurs des cookies",
-    "description": "Description of the role of the item in the advanced filtering menu."
-  },
-
-  "tooltipQuerySubdomains": {
-    "message": "Affiche également les sous-domaines régis par chaque domaine sélectionné",
-    "description": "Checkbox for search engine, used to query subdomains."
-  },
-
-  "tooltipQueryContexts": {
-    "message": "Les contextes permettent de séparer les données de stockage selon les activités en ligne sans avoir à effacer l'historique de navigation, à se déconnecter, ou encore à utiliser différents navigateurs.",
-    "description": "Text for search engine describing the content of the drop-down list of stores."
-  },
-
-  "tooltipRefresh": {
-    "message": "Rafraîchir la liste des domaines",
-    "description": "Global button to refresh the interface."
-  },
-
-  "tooltipAutoActualize": {
-    "message": "Surveiller les cookies et actualiser automatiquement l'interface",
-    "description": "Checkbox to monitor cookies and refresh the interface."
-  },
-
-  "tooltipOptionsPage": {
-    "message": "Ouvrir le panneau de contrôle",
-    "description": "Button to open the options page"
-  },
-
-  "tooltipADelete": {
-    "message": "Supprimer tous les cookies du contexte sélectionné",
-    "description": "Button to delete all the cookies in the selected context."
-  },
-
-  "tooltipcontributeContent": {
-    "message": "Comment contribuer ?",
-    "description": "Button to show the popover about contribution."
-  },
-
-  "tooltipSave": {
-    "message": "Enregistrer le cookie",
-    "description": "Button to save the current cookie."
-  },
-
-  "tooltipEdit": {
-    "message": "Débloquer les champs grisés<br>Autorise la création d'un nouveau cookie en se servant du cookie courant en tant que modèle.",
-    "description": "Button to edit current cookie."
-  },
-
-  "tooltipCDelete": {
-    "message": "Supprimer le cookie",
-    "description": "Button to delete the current cookie"
-  },
-
-  "tooltipCProtect": {
-    "message": "Protection contre l'effacement<br>Quand le cadenas est fermé, cela signifie qu'une suppression future de ce cookie par cet addon sera refusée.",
-    "description": "Button to protect or unprotect the current cookie from deletion."
-  },
-
-  "contributeContent": {
-    "message": "<div id='contribute-content'>Vous pouvez contribuer au développement de plusieurs façons :<br><ul><li>Si vous voulez faire une donation pour récompenser les nombreuses heures de travail, veuillez considérer cette adresse bitcoin :<br><span class='btc-color'>15qduxA755YANqGcbd8VvBmm8DmR4rCg1i</span>,<br>ou encore la plateforme de dons récurrents Liberapay :<br><a target='_blank' href='https://liberapay.com/Ysard/donate'><img src='icons/donate.svg'></a></li><li>Vous pouvez noter l'application pour augmenter sa visibilité sur <a target='_blank' href='https://addons.mozilla.org/firefox/addon/cookie-quick-manager/'>addons.mozilla.org</a>.</li><li>Vous pouvez participer au développement sur le <a target='_blank' href='https://github.com/ysard/cookie-quick-manager'>dépôt GitHub</a>.</li><li>Parlez-en autour de vous !</li></ul></div>",
-    "description": "How to contribute popover."
-  },
-
-
-
-  "modalAlertTitle": {
-    "message": "Êtes-vous sûr de vouloir effacer ces cookies ?",
-    "description": "Title on modal dialog window, when a user is about to delete all visible cookies."
-  },
-
-  "modalAlertContent": {
-    "message": "Votre action effacera tous les cookies visibles ! C'est-à-dire, seulement ceux que vous voyez en résultat de recherche.",
-    "description": "Content on modal dialog window, when a user is about to delete all visible cookies."
-  },
-
-  "modalMenuAlertContent": {
-    "message": "Votre action effacera tous les cookies du contexte de navigation courant ($cookie_number$) !\nSouhaitez-vous continuer?",
-    "description": "Content of the modal JS alert when a user is about to delete all visible cookies.",
+  "extName": {
+    "message": "CookieTin — gestionnaire et éditeur de cookies"
+  },
+  "extDescription": {
+    "message": "Voir, modifier, protéger, importer et exporter les cookies. Conteneurs, navigation privée, cookies partitionnés. Tout reste local."
+  },
+  "settings": {
+    "message": "Paramètres"
+  },
+  "support": {
+    "message": "Soutenir"
+  },
+  "cancel": {
+    "message": "Annuler"
+  },
+  "close": {
+    "message": "Fermer"
+  },
+  "copy": {
+    "message": "Copier"
+  },
+  "copied": {
+    "message": "Copié !"
+  },
+  "delete": {
+    "message": "Supprimer"
+  },
+  "save": {
+    "message": "Enregistrer"
+  },
+  "download": {
+    "message": "Télécharger"
+  },
+  "import": {
+    "message": "Importer"
+  },
+  "export": {
+    "message": "Exporter"
+  },
+  "refresh": {
+    "message": "Actualiser"
+  },
+  "undo": {
+    "message": "Annuler"
+  },
+  "protect": {
+    "message": "Protéger"
+  },
+  "unprotect": {
+    "message": "Retirer la protection"
+  },
+  "protected": {
+    "message": "Protégé"
+  },
+  "select": {
+    "message": "Sélectionner"
+  },
+  "storeDefault": {
+    "message": "Par défaut"
+  },
+  "storePrivate": {
+    "message": "Navigation privée"
+  },
+  "accessNeeded": {
+    "message": "CookieTin a besoin d’accéder à tous les sites pour voir et modifier leurs cookies."
+  },
+  "accessGrant": {
+    "message": "Autoriser"
+  },
+  "deletedCount": {
+    "message": "Cookies supprimés : $P1$.",
     "placeholders": {
-      "cookie_number" : {
-        "content" : "$1"
+      "p1": {
+        "content": "$1"
       }
     }
   },
-
-  "modalClipboardTitle": {
-    "message": "Export de $cookie_number$ cookie(s)",
-    "description": "Header that tells the user how many cookies are exported in the textarea.",
+  "keptProtected": {
+    "message": "Cookies protégés conservés : $P1$.",
     "placeholders": {
-      "cookie_number" : {
-        "content" : "$1"
+      "p1": {
+        "content": "$1"
       }
     }
   },
-
-  "noCookieAlert": {
-    "message": "Pas de cookie à afficher.",
-    "description": "Alert when there is no cookie in domain and cookie lists."
-  },
-
-  "cookieRestoredSuccess": {
-    "message": "$number$ cookie(s) restauré(s) avec succès !",
-    "description": "Alert when a file is imported with success.",
+  "deleteFailed": {
+    "message": "Échecs : $P1$.",
     "placeholders": {
-      "number" : {
-        "content" : "$1"
+      "p1": {
+        "content": "$1"
       }
     }
   },
-
-  "cookieRestoredError": {
-    "message": "Erreur, aucun cookie n'a été restauré.<br>$json_error$",
-    "description": "Alert when a file is imported with an error from the json parser.",
+  "restoredCount": {
+    "message": "Cookies restaurés : $P1$.",
     "placeholders": {
-      "json_error" : {
-        "content" : "$1"
+      "p1": {
+        "content": "$1"
       }
     }
   },
-
-  "cookieRestoredSingleError": {
-    "message": "Erreur, au moins un cookie n'a pas été sauvegardé :<br>$error$<br>Ne vous inquiétez pas; la plupart du temps il s'agit de cookies de session qui ont expiré.",
-    "description": "Alert when a file is imported with an error during the save process.",
+  "protectedStay": {
+    "message": "$P1$ protégés resteront",
     "placeholders": {
-      "error" : {
-        "content" : "$1"
+      "p1": {
+        "content": "$1"
       }
     }
   },
-
-
-
-
-  "oSettings": {
-    "message": "Paramètres",
-    "description": "Tab title"
+  "noSiteHere": {
+    "message": "Aucun site dans cet onglet"
   },
-
-  "oMyProtectedCookies": {
-    "message": "Mes cookies protégés",
-    "description": "Tab title"
+  "popupManageSite": {
+    "message": "Cookies de $P1$",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
   },
-
-  "oShortcuts": {
-    "message": "Raccourcis",
-    "description": "Tab title"
+  "popupOpenManager": {
+    "message": "Ouvrir le gestionnaire"
   },
-
-  "oAbout": {
-    "message": "À propos",
-    "description": "Tab title"
+  "popupDeleteSite": {
+    "message": "Supprimer les cookies de $P1$",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
   },
-
-  "oPrivacy": {
-    "message": "Vie privée et sécurité",
-    "description": "Settings page: Section title"
+  "popupClearStorage": {
+    "message": "Effacer les données du site"
   },
-
-  "oDelete_all_on_restart": {
-    "message": " Effacer les cookies au redémarrage du navigateur",
-    "description": "Settings page: Checkbox"
+  "popupClearStorageHint": {
+    "message": "localStorage, sessionStorage, IndexedDB, cache"
   },
-
-  "oImport_protected_cookies": {
-    "message": " Protéger les cookies lors de l'importation",
-    "description": "Settings page: Checkbox"
+  "popupDeleteStore": {
+    "message": "Supprimer tous les cookies : $P1$",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
   },
-
-  "oPrevent_protected_cookies_deletion": {
-    "message": " Empêcher les sites de supprimer des cookies protégés, même s'ils sont expirés",
-    "description": "Settings page: Checkbox"
+  "popupConfirmStore": {
+    "message": "Cliquez encore pour supprimer $P1$ cookies",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
   },
-
-  "oAppearance": {
-    "message": "Apparence",
-    "description": "Settings page: Section title"
+  "storageCleared": {
+    "message": "Données du site effacées."
   },
-
-  "oSkin": {
-    "message": "Thème:",
-    "description": "Settings page: Skin selector"
+  "searchPlaceholder": {
+    "message": "Rechercher : domaine  name:session  value:abc"
   },
-
-  "oDefault": {
-    "message": "Défaut",
-    "description": "Settings page: default skin"
+  "allStores": {
+    "message": "Toutes fenêtres et conteneurs"
   },
-
-  "oOpen_in_new_tab": {
-    "message": " Toujours ouvrir Cookie Quick Manager dans un nouvel onglet",
-    "description": "Settings page: Checkbox"
+  "subdomains": {
+    "message": "Sous-domaines"
   },
-
-  "oDisplay_deletion_alert": {
-    "message": " Affiche une alerte avant la suppression des cookies de contexte(s) de navigation (Bouton \"Supprimer tout\" ou entrée du popup menu \"Supprimer les cookies du contexte\")",
-    "description": "Settings page: Checkbox"
+  "subdomainsHint": {
+    "message": "Afficher aussi les cookies des sous-domaines du domaine choisi"
   },
-
-  "oExport": {
-    "message": "Export",
-    "description": "Settings page: Section title"
+  "newCookieShort": {
+    "message": "Nouveau"
   },
-
-  "oTemplate": {
-    "message": "Modèle:",
-    "description": "Settings page: Template selector"
+  "domains": {
+    "message": "Domaines"
   },
-
-  "oYourData": {
-    "message": "Vos données",
-    "description": "Settings page: Section title"
+  "cookies": {
+    "message": "Cookies"
   },
-
-  "aboutBackupButton": {
-    "message": "Enregistrer dans un fichier",
-    "description": "Settings page: Backup user data"
+  "details": {
+    "message": "Détails"
   },
-
-  "aboutRestoreButton": {
-    "message": "Restaurer depuis un fichier",
-    "description": "Settings page: Restore user data from file"
+  "showAll": {
+    "message": "Tout afficher"
   },
-
-  "aboutOr": {
-    "message": "Ou alors, vous pouvez...",
-    "description": "Settings page: Sentence between backup/restore buttons and the button to clear user data"
+  "nothingFound": {
+    "message": "Aucun résultat"
   },
-
-  "aboutResetButton": {
-    "message": "Revenir aux paramètres par défaut",
-    "description": "Settings page: Reset settings"
+  "noCookies": {
+    "message": "Aucun cookie pour l’instant"
   },
-
-  "oManagementOfProtectedCookies": {
-    "message": "Gestion des cookies protégés",
-    "description": "My protected cookies page: title"
+  "noCookiesHere": {
+    "message": "Aucun cookie"
   },
-
-  "oManagementOfProtectedCookiesText": {
-    "message": "Ici, vous pouvez consulter l'ensemble de cookies protégés et les supprimer si vous le souhaitez.",
-    "description": "My protected cookies page: text"
+  "selectAll": {
+    "message": "Tout sélectionner"
   },
-
-  "unprotectSelectedCookiesButton": {
-    "message": "Déprotéger les cookies sélectionnés",
-    "description": "My protected cookies page: Unprotect selected cookies button"
+  "selectedCount": {
+    "message": "Sélection : $P1$",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
   },
-
-  "oNoProtectedCookiesAlert": {
-    "message": "Vous n'avez actuellement aucun cookie protégé.",
-    "description": "My protected cookies page: Alert when there is no data to display"
+  "kindAll": {
+    "message": "Tous"
   },
-
-  "oLicense": {
-    "message": "Code source (Licence GPLv3, en Anglais)",
-    "description": "About page: Link for GitHub sources"
+  "kindSession": {
+    "message": "Session"
   },
-
-  "oIssues": {
-    "message": "Signaler un problème",
-    "description": "About page: Link for GitHub issues"
+  "kindPersistent": {
+    "message": "Avec expiration"
   },
-
-  "oThanks": {
-    "message": "Remerciements (aide et remontée de bugs) :",
-    "description": "About page: List of thanks"
+  "kindProtected": {
+    "message": "Protégés"
   },
-
-  "oTranslations": {
-    "message": "Traductions :",
-    "description": "About page: List of contributors for translations"
+  "kindPartitioned": {
+    "message": "Partitionnés"
   },
-
-  "oExternalDependencies": {
-    "message": "Dépendances externes (compatibles GPLv3) :",
-    "description": "About page: List of external dependencies"
+  "kindInsecure": {
+    "message": "Sans Secure"
   },
-
-  "oSwitchDomains": {
-    "message": "Passer à la liste des domaines",
-    "description": "Keyboard shortcut description: ctrl+left"
+  "copyTo": {
+    "message": "Copier vers…"
   },
-
-  "oSwitchCookies": {
-    "message": "Passer à la liste des cookies",
-    "description": "Keyboard shortcut description: ctrl+right"
+  "copyToHint": {
+    "message": "Copier les cookies choisis vers un autre conteneur"
   },
-
-  "oDelCurrentCookie": {
-    "message": "Supprimer le cookie courant",
-    "description": "Keyboard shortcut description: suppr"
+  "copiedToStore": {
+    "message": "$P1$ cookies copiés vers $P2$.",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      },
+      "p2": {
+        "content": "$2"
+      }
+    }
   },
-
-  "oSearchDomain": {
-    "message": "Rechercher un domaine",
-    "description": "Keyboard shortcut description: ctrl+F"
+  "partitionedIn": {
+    "message": "Partitionné : stocké pour $P1$",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
   },
-
-  "oRestoreFile": {
-    "message": "Restaurer une sauvegarde JSON",
-    "description": "Keyboard shortcut description: ctrl+O"
+  "hasProtected": {
+    "message": "Contient des cookies protégés"
   },
-
-  "oExportAll": {
-    "message": "Exporter tous les cookies dans un fichier",
-    "description": "Keyboard shortcut description: ctrl+S"
+  "noName": {
+    "message": "(sans nom)"
   },
-
-
-
-  "popupSimple": {
-    "message": "Gérer tous les cookies",
-    "description": "Popup menu: Display the main interface of CQM"
+  "tooMany": {
+    "message": "Affichage des $P1$ premiers. Affinez la recherche pour voir la suite.",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
   },
-
-  "popupSearch": {
-    "message": "Chercher les cookies pour: ",
-    "description": "Popup menu: Search and edit cookies in the main interface of CQM"
+  "pickCookie": {
+    "message": "Choisissez un cookie pour le voir et le modifier."
   },
-
-  "popupDeleteCurrentCookies": {
-    "message": "Supprimer les cookies de la page",
-    "description": "Popup menu: Delete current Site Cookies"
+  "shortcutsHint": {
+    "message": "Ctrl/⌘ ou Maj + clic pour en choisir plusieurs. / — recherche, Suppr — supprimer, Ctrl+S — enregistrer."
   },
-
-  "popupDeleteContextCookies": {
-    "message": "Supprimer les cookies du contexte",
-    "description": "Popup menu: Delete current Context Cookies"
+  "bulkHint": {
+    "message": "Actions au-dessus de la liste : supprimer, protéger, exporter ou copier."
   },
-
-  "popupDeleteCurrentLocalStorage": {
-    "message": "Supprimer le LocalStorage de la page",
-    "description": "Popup menu: Delete current Site LocalStorage"
+  "allProtected": {
+    "message": "Ces cookies sont protégés. Retirez d’abord la protection."
   },
-
-  "popupOptions": {
-    "message": "Options",
-    "description": "Popup menu: go to options page"
+  "confirmTitle": {
+    "message": "Vous êtes sûr ?"
+  },
+  "confirmDelete": {
+    "message": "Supprimer $P1$ cookies ?",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "protectedCount": {
+    "message": "Cookies protégés : $P1$.",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "unprotectedCount": {
+    "message": "Protection retirée : $P1$.",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "saved": {
+    "message": "Enregistré."
+  },
+  "saveFailed": {
+    "message": "Le navigateur a refusé le cookie : $P1$",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "discardChanges": {
+    "message": "Abandonner les modifications non enregistrées ?"
+  },
+  "newCookie": {
+    "message": "Nouveau cookie"
+  },
+  "editCookie": {
+    "message": "Cookie"
+  },
+  "unsaved": {
+    "message": "non enregistré"
+  },
+  "unsavedHint": {
+    "message": "Cliquez Enregistrer ou Ctrl+S"
+  },
+  "fieldName": {
+    "message": "Nom"
+  },
+  "fieldValue": {
+    "message": "Valeur"
+  },
+  "bytes": {
+    "message": "$P1$ octets",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "urlDecode": {
+    "message": "Décoder URL"
+  },
+  "urlDecodeHint": {
+    "message": "%20 → espace"
+  },
+  "urlEncode": {
+    "message": "Encoder URL"
+  },
+  "b64Decode": {
+    "message": "Décoder Base64"
+  },
+  "b64Encode": {
+    "message": "Encoder Base64"
+  },
+  "valueToolFailed": {
+    "message": "Cette valeur ne peut pas être décodée ainsi."
+  },
+  "jwtDecoded": {
+    "message": "JSON Web Token (décodé)"
+  },
+  "fieldDomain": {
+    "message": "Domaine"
+  },
+  "fieldPath": {
+    "message": "Chemin"
+  },
+  "fieldIncludeSubdomains": {
+    "message": "Envoyer aussi aux sous-domaines"
+  },
+  "fieldStore": {
+    "message": "Fenêtre / conteneur"
+  },
+  "fieldSameSite": {
+    "message": "SameSite"
+  },
+  "sameSiteUnspecified": {
+    "message": "Non défini (par défaut)"
+  },
+  "sameSiteLax": {
+    "message": "Lax"
+  },
+  "sameSiteStrict": {
+    "message": "Strict"
+  },
+  "sameSiteNone": {
+    "message": "None (intersite)"
+  },
+  "fieldExpires": {
+    "message": "Expire"
+  },
+  "fieldSession": {
+    "message": "Cookie de session"
+  },
+  "fieldSecureHint": {
+    "message": "Envoyé uniquement en HTTPS"
+  },
+  "fieldHttpOnlyHint": {
+    "message": "Invisible pour les scripts de la page"
+  },
+  "advanced": {
+    "message": "Avancé"
+  },
+  "fieldPartition": {
+    "message": "Partitionné pour le site"
+  },
+  "fieldPartitionHint": {
+    "message": "Pour les cookies qu’un site stocke lorsqu’il est intégré à un autre (Total Cookie Protection, CHIPS). Laisser vide sinon."
+  },
+  "fieldFirstParty": {
+    "message": "Domaine principal (First-Party Isolation)"
+  },
+  "duplicate": {
+    "message": "Dupliquer"
+  },
+  "duplicateHint": {
+    "message": "Créer une copie à modifier séparément"
+  },
+  "unprotectFirst": {
+    "message": "Protégé : retirez d’abord la protection"
+  },
+  "errDomainRequired": {
+    "message": "Indiquez un domaine."
+  },
+  "errExpiresPast": {
+    "message": "La date d’expiration est passée : le navigateur supprimera le cookie."
+  },
+  "errPrefixSecure": {
+    "message": "Les noms en __Secure- ou __Host- exigent Secure."
+  },
+  "errHostPrefix": {
+    "message": "Les cookies __Host- exigent le chemin / sans sous-domaines."
+  },
+  "errSameSiteNone": {
+    "message": "SameSite=None exige Secure."
+  },
+  "errPartitionedSecure": {
+    "message": "Les cookies partitionnés exigent Secure."
+  },
+  "exportTitle": {
+    "message": "Exporter les cookies"
+  },
+  "scopeSelected": {
+    "message": "Sélectionnés"
+  },
+  "scopeList": {
+    "message": "De la liste"
+  },
+  "scopeAll": {
+    "message": "Tous les trouvés"
+  },
+  "formatJson": {
+    "message": "JSON (Cookie-Editor, EditThisCookie)"
+  },
+  "formatNetscape": {
+    "message": "cookies.txt (curl, wget, yt-dlp)"
+  },
+  "formatHeader": {
+    "message": "En-tête Cookie (name=value; …)"
+  },
+  "formatCqm": {
+    "message": "JSON (Cookie Quick Manager)"
+  },
+  "format_json": {
+    "message": "JSON"
+  },
+  "format_netscape": {
+    "message": "cookies.txt"
+  },
+  "format_cqm": {
+    "message": "Cookie Quick Manager"
+  },
+  "format_playwright": {
+    "message": "Playwright"
+  },
+  "exportWarning": {
+    "message": "Les cookies exportés permettent d’accéder à vos comptes. Gardez-les privés."
+  },
+  "importTitle": {
+    "message": "Importer des cookies"
+  },
+  "importHint": {
+    "message": "JSON de CookieTin, Cookie-Editor, EditThisCookie, Cookie Quick Manager ou Playwright, ou un fichier cookies.txt."
+  },
+  "chooseFile": {
+    "message": "Choisir un fichier…"
+  },
+  "orPaste": {
+    "message": "ou collez le texte ci-dessous"
+  },
+  "importFound": {
+    "message": "$P1$ cookies trouvés ($P2$).",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      },
+      "p2": {
+        "content": "$2"
+      }
+    }
+  },
+  "importSkipped": {
+    "message": "Ignorés (expirés ou illisibles) : $P1$.",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "importUnreadable": {
+    "message": "Impossible de lire ce texte comme des cookies."
+  },
+  "importInto": {
+    "message": "Vers"
+  },
+  "importKeepStores": {
+    "message": "Conteneurs du fichier"
+  },
+  "importProtect": {
+    "message": "Protéger les cookies importés"
+  },
+  "importRun": {
+    "message": "Importer $P1$",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "importedCount": {
+    "message": "Cookies importés : $P1$.",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "importFailed": {
+    "message": "Refusés par le navigateur : $P1$.",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsTitle": {
+    "message": "Paramètres"
+  },
+  "secCleanup": {
+    "message": "Nettoyage automatique"
+  },
+  "optDeleteOnStartup": {
+    "message": "Supprimer les cookies au démarrage"
+  },
+  "optDeleteOnStartupHint": {
+    "message": "Les cookies protégés restent : vous restez connecté là où vous voulez."
+  },
+  "optCleanup": {
+    "message": "Nettoyer régulièrement"
+  },
+  "cleanupOff": {
+    "message": "Désactivé"
+  },
+  "cleanupEvery": {
+    "message": "Toutes les $P1$ h",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "optKeepOpenTabs": {
+    "message": "Garder les cookies des sites ouverts"
+  },
+  "optKeepOpenTabsHint": {
+    "message": "Pour ne pas être déconnecté des sites en cours d’utilisation."
+  },
+  "cleanupNote": {
+    "message": "Les cookies protégés ne sont jamais supprimés."
+  },
+  "secProtection": {
+    "message": "Cookies protégés"
+  },
+  "protectionText": {
+    "message": "Les cookies protégés résistent aux suppressions et nettoyages de CookieTin. Protégez-les dans le gestionnaire (cadenas)."
+  },
+  "optGuard": {
+    "message": "Les restaurer aussi si un site ou le navigateur les supprime"
+  },
+  "optGuardHint": {
+    "message": "Par ex. quand un site vous déconnecte en effaçant son cookie."
+  },
+  "noProtected": {
+    "message": "Aucun cookie protégé pour l’instant."
+  },
+  "unprotectDomain": {
+    "message": "Retirer la protection de tout le domaine"
+  },
+  "secInterface": {
+    "message": "Interface"
+  },
+  "optOpenIn": {
+    "message": "Ouvrir le gestionnaire dans"
+  },
+  "openTab": {
+    "message": "un onglet"
+  },
+  "openWindow": {
+    "message": "sa propre fenêtre"
+  },
+  "optTheme": {
+    "message": "Thème"
+  },
+  "themeAuto": {
+    "message": "Comme le système"
+  },
+  "themeLight": {
+    "message": "Clair"
+  },
+  "themeDark": {
+    "message": "Sombre"
+  },
+  "optExportFormat": {
+    "message": "Format d’export par défaut"
+  },
+  "optConfirm": {
+    "message": "Demander avant de supprimer plusieurs cookies"
+  },
+  "optShowStoreDelete": {
+    "message": "Afficher « Supprimer tous les cookies » dans le menu"
+  },
+  "optShowStoreDeleteHint": {
+    "message": "Désactivez si vous cliquez dessus par erreur."
+  },
+  "optAutoRefresh": {
+    "message": "Mettre à jour le gestionnaire en direct"
+  },
+  "secPrivate": {
+    "message": "Navigation privée"
+  },
+  "privateAllowed": {
+    "message": "CookieTin voit les cookies privés tant qu’une fenêtre privée est ouverte."
+  },
+  "privateHowFirefox": {
+    "message": "Pour gérer les cookies privés, autorisez CookieTin : Modules complémentaires → CookieTin → « Exécution dans les fenêtres privées »."
+  },
+  "privateHowChrome": {
+    "message": "Pour les cookies de navigation privée, activez « Autoriser en navigation privée » dans les détails de l’extension."
+  },
+  "secBackup": {
+    "message": "Sauvegarde"
+  },
+  "backupText": {
+    "message": "Paramètres et liste des cookies protégés (pas les cookies eux-mêmes)."
+  },
+  "backupSave": {
+    "message": "Enregistrer"
+  },
+  "backupRestore": {
+    "message": "Restaurer depuis un fichier…"
+  },
+  "reset": {
+    "message": "Tout réinitialiser"
+  },
+  "resetConfirm": {
+    "message": "Réinitialiser les paramètres et oublier les cookies protégés ?"
+  },
+  "resetDone": {
+    "message": "Tout est réinitialisé."
+  },
+  "restoreDone": {
+    "message": "Restauré. Cookies protégés dans le fichier : $P1$.",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "restoreFailed": {
+    "message": "Ce fichier n’est pas une sauvegarde CookieTin ou Cookie Quick Manager."
+  },
+  "migrateText": {
+    "message": "Vous venez de Cookie Quick Manager ? Dans ses paramètres, cliquez « Sauvegarder les données », puis restaurez le fichier ici."
+  },
+  "supportTitle": {
+    "message": "Soutenir CookieTin"
+  },
+  "supportText": {
+    "message": "CookieTin est gratuit, libre, sans publicité ni pistage. S’il vous fait gagner du temps, un don aide à le maintenir."
+  },
+  "supportBoosty": {
+    "message": "Faire un don sur Boosty"
+  },
+  "supportNetworkNote": {
+    "message": "N’envoyez que les cryptos indiquées sur le réseau indiqué."
+  },
+  "basedOn": {
+    "message": "Basé sur"
+  },
+  "byAuthor": {
+    "message": "par Ysard"
+  },
+  "privacy": {
+    "message": "Confidentialité"
   }
-
 }

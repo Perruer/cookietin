@@ -1,639 +1,706 @@
 {
-  "extensionDescription": {
-    "message": "An addon to manage (view, search, create, edit, delete, backup, restore) cookies.",
-    "description": "Description of the extension."
-  },
-
-  "domainsListTitle": {
-    "message": "Domains",
-    "description": "Title of the list that displays domains."
-  },
-
-  "cookiesListTitle": {
-    "message": "Cookies",
-    "description": "Title of the list that displays cookies."
-  },
-
-  "detailsPanelTitle": {
-    "message": "Details",
-    "description": "Title of the list that displays details for cookies."
-  },
-
-  "cDomain": {
-    "message": "Domain ",
-    "description": "Attribute of a cookie in the details panel."
-  },
-
-  "cFpiDomain": {
-    "message": "First-Party ",
-    "description": "Attribute of a cookie in the details panel."
-  },
-
-  "cName": {
-    "message": "Name ",
-    "description": "Attribute of a cookie in the details panel."
-  },
-
-  "cValue": {
-    "message": "Value ",
-    "description": "Attribute of a cookie in the details panel."
-  },
-
-  "cPath": {
-    "message": "Path ",
-    "description": "Attribute of a cookie in the details panel."
-  },
-
-  "cStore": {
-    "message": "Context ",
-    "description": "Attribute of a cookie in the details panel."
-  },
-
-  "search_domainPlaceholder": {
-    "message": "Search a domain...",
-    "description": "Input field used to search domains by their names."
-  },
-
-  "search_filterPlaceholder": {
-    "message": "String to search...",
-    "description": "Input field used to filter cookies by their attributes."
-  },
-
-  "filterByAttributeHeader": {
-    "message": "Filter by cookies data",
-    "description": "Filter dropdown menu header."
-  },
-
-  "filterByAttributeTip": {
-    "message": "Choose an item to add a filter to the search form",
-    "description": "Tip sentence below the search form. Width of the text is limited! (the menu may overflow on the left of the screen)."
-  },
-
-   "filterByAttributeNames": {
-    "message": "in the names",
-    "description": "Filter dropdown menu item."
-  },
-
-   "filterByAttributeValues": {
-    "message": "in the values",
-    "description": "Filter dropdown menu item."
-  },
-
-  "checkboxQuerySubdomains": {
-    "message": " Sub-domains",
-    "description": "Checkbox for search engine, used to query subdomains."
-  },
-
-  "selectQueryContexts": {
-    "message": "Context(s):",
-    "description": "Text for search engine describing the content of the drop-down list of stores."
-  },
-
-  "checkboxAutoActualize": {
-    "message": " Auto-refresh",
-    "description": "Checkbox to monitor cookies and refresh the interface."
-  },
-
-  "tooltipOptionsPage": {
-    "message": "Open the dashboard",
-    "description": "Button to open the options page"
-  },
-
-  "menu_protect_all": {
-    "message": "Protect all cookies",
-    "description": "Dropdown menu option."
-  },
-
-  "menu_protect_session": {
-    "message": "Protect session cookies",
-    "description": "Dropdown menu option."
-  },
-
-  "menu_unprotect_all": {
-    "message": "Unprotect all cookies",
-    "description": "Dropdown menu option."
-  },
-
-  "menu_unprotect_session": {
-    "message": "Unprotect session cookies",
-    "description": "Dropdown menu option."
-  },
-
-  "menuHeaderExport": {
-    "message": "Export:",
-    "description": "Dropdown menu header."
-  },
-
-  "menuC2Clipboard": {
-    "message": "Copy cookie to clipboard",
-    "description": "Dropdown menu option."
-  },
-
-  "menuD2Clipboard": {
-    "message": "Copy domain to clipboard",
-    "description": "Dropdown menu option."
-  },
-
-  "menuA2Clipboard": {
-    "message": "Copy all to clipboard",
-    "description": "Dropdown menu option."
-  },
-
-  "menuC2File": {
-    "message": "Save cookie to file",
-    "description": "Dropdown menu option."
-  },
-
-  "menuD2File": {
-    "message": "Save domain to file",
-    "description": "Dropdown menu option."
-  },
-
-  "menuA2File": {
-    "message": "Save all to file",
-    "description": "Dropdown menu option."
-  },
-
-  "menuHeaderImport": {
-    "message": "Import:",
-    "description": "Dropdown menu header."
-  },
-
-  "menuRestore": {
-    "message": "Restore cookies from file",
-    "description": "Dropdown menu option."
-  },
-
-  "menu_tooltip_dropup_protect": {
-    "message": "Protect/Unprotect all the cookies",
-    "description": "Tooltip for the dropup menu."
-  },
-
-  "menu_tooltip_dropup_export": {
-    "message": "Export/Import",
-    "description": "Tooltip for the dropup menu."
-  },
-
-  "buttonClose": {
-    "message": "Close",
-    "description": "Close button on modal popovers and contextual menus."
-  },
-
-  "buttonContinue": {
-    "message": "Continue",
-    "description": "Continue button on modal popovers and contextual menus."
-  },
-
-
-
-
-  "contextMenu_domain_copy2Clipboard": {
-    "message": "Copy to clipboard",
-    "description": "Option for the contextual menu that opens on a domain."
-  },
-
-  "contextMenu_domain_copy2File": {
-    "message": "Save to file",
-    "description": "Option for the contextual menu that opens on a domain."
-  },
-
-  "contextMenu_domain_protect": {
-    "message": "Protect",
-    "description": "Option for the contextual menu that opens on a domain."
-  },
-
-  "contextMenu_domain_unprotect": {
-    "message": "Unprotect",
-    "description": "Option for the contextual menu that opens on a domain."
-  },
-
-  "contextMenu_domain_protect_session": {
-    "message": "Protect session cookies",
-    "description": "Option for the contextual menu that opens on a domain."
-  },
-
-  "contextMenu_domain_unprotect_session": {
-    "message": "Unprotect session cookies",
-    "description": "Option for the contextual menu that opens on a domain."
-  },
-
-  "contextMenu_domain_delete": {
-    "message": "Delete",
-    "description": "Option for the contextual menu that opens on a domain."
-  },
-
-  "contextMenu_domain_copy2container": {
-    "message": "Copy to container",
-    "description": "Option for the contextual menu that opens on a domain."
-  },
-
-
-
-
-  "container_all": {
-    "message": "All",
-    "description": "Name that matches for all the stores in the browser."
-  },
-
-  "container_default": {
-    "message": "Default",
-    "description": "Name of the default store in the browser."
-  },
-
-  "container_private": {
-    "message": "Private browsing",
-    "description": "Name of the Private browsing store."
-  },
-
-
-
-
-  "tooltip_cDomain": {
-    "message": "A host-only cookie, applies only to the current domain. Other cookies also apply to subdomains, and their domain has a leading point.",
-    "description": ""
-  },
-
-  "tooltip_cFpiDomain": {
-    "message": "First-Party Isolation prevents third party trackers from using cookies to identify the user across different websites (see options).",
-    "description": "Description of what FPI is."
-  },
-
-  "tooltip_buttonUrl": {
-    "message": "URL decode<br>Click to activate/deactivate.",
-    "description": "Button to change url encoding of the current cookie value."
-  },
-
-  "tooltip_buttonB64": {
-    "message": "Base64 decode<br>Click to activate/deactivate.",
-    "description": "Button to change url encoding of the current cookie value."
-  },
-
-  "tooltip_cStore": {
-    "message": "Browsing context<br>Select a context to make sure that the cookie is accessible in it.",
-    "description": "Select menu to modify the context of the current cookie (private/default/etc.)."
-  },
-
-  "tooltip_cSameSite": {
-    "message": "Partial protection against the risks associated with Cross-Site Request Forgery (CSRF) and Cross-Site Script Inclusion (XSSI) attacks.<br>The strict mode allows an application to warn the browser that the cookie should only be sent if the request originates from the website the cookie came from, and not from a third party website.",
-    "description": "Select menu to modify the sameSite cookie flag."
-  },
-
-  "tooltip_cHttpOnly": {
-    "message": "Theft protection<br>Check to force the cookie to be sent only over HTTP(S),<br> i.e. block JavaScript access like in XSS context.",
-    "description": "Checkbox to change the httpOnly cookie flag."
-  },
-
-  "tooltip_cIsSecure": {
-    "message": "Theft protection<br>Check to force the cookie to be sent only over secure channels like HTTPS.",
-    "description": "Checkbox to change the isSecure cookie flag."
-  },
-
-  "tooltip_cIsSession": {
-    "message": "Validity period<br>Check to force the cookie to expire at the end of the session.",
-    "description": "Checkbox to change the isSession cookie flag."
-  },
-
-  "tooltipQueryFilterInNames": {
-    "message": "Click here to search this term in the names of cookies",
-    "description": "Description of the role of the item in the advanced filtering menu."
-  },
-
-  "tooltipQueryFilterInValues": {
-    "message": "Click here to search this term in the values of cookies",
-    "description": "Description of the role of the item in the advanced filtering menu."
-  },
-
-  "tooltipQuerySubdomains": {
-    "message": "Display also the cookies of the subdomains concerned by the selected domain",
-    "description": "Checkbox for search engine, used to query subdomains."
-  },
-
-  "tooltipQueryContexts": {
-    "message": "Contexts are used to separate storage data by online activities without having to clear the browsing history, disconnect and reconnect, or use different browsers.",
-    "description": "Text for search engine describing the content of the drop-down list of stores."
-  },
-
-  "tooltipRefresh": {
-    "message": "Refresh the list of domains",
-    "description": "Global button to refresh the interface."
-  },
-
-  "tooltipAutoActualize": {
-    "message": "Monitor cookies and auto-refresh the interface",
-    "description": "Checkbox to monitor cookies and refresh the interface."
-  },
-
-  "tooltipADelete": {
-    "message": "Delete all the cookies of the selected context",
-    "description": "Button to delete all the cookies in the selected context."
-  },
-
-  "tooltipcontributeContent": {
-    "message": "How to contribute?",
-    "description": "Button to show the popover about contribution."
-  },
-
-  "tooltipSave": {
-    "message": "Save the current cookie",
-    "description": "Button to save the current cookie."
-  },
-
-  "tooltipEdit": {
-    "message": "Unlock the gray fields<br>Allow to create a new cookie by editing the current one as a template.",
-    "description": "Button to edit current cookie."
-  },
-
-  "tooltipCDelete": {
-    "message": "Delete the current cookie",
-    "description": "Button to delete the current cookie."
-  },
-
-  "tooltipCProtect": {
-    "message": "Erasure protection<br>When the padlock is closed, it means that a future deletion of this cookie by this addon will be refused.",
-    "description": "Button to protect or unprotect the current cookie from deletion."
-  },
-
-  "contributeContent": {
-    "message": "<div id='contribute-content'>You can contribute to development in several ways:<br><ul><li>If you would like to make a donation to reward the many hours of development, please consider this bitcoin address:<br><span class='btc-color'>15qduxA755YANqGcbd8VvBmm8DmR4rCg1i</span>,<br>or the Liberapay platform for recurring donations:<br><a target='_blank' href='https://liberapay.com/Ysard/donate'><img src='icons/donate.svg'></a></li><li>You can rate the application on <a target='_blank' href='https://addons.mozilla.org/firefox/addon/cookie-quick-manager/'>addons.mozilla.org</a>.</li><li>Participate in the review of the code on the <a target='_blank' href='https://github.com/ysard/cookie-quick-manager'>GitHub repository</a>.</li><li>Talk about it around you!</li></ul></div>",
-    "description": "How to contribute popover."
-  },
-
-
-
-
-  "modalAlertTitle": {
-    "message": "Are you sure you want to delete these cookies?",
-    "description": "Title on modal dialog window, when a user is about to delete all visible cookies."
-  },
-
-  "modalAlertContent": {
-    "message": "Your action will erase all visible cookies! That is, just the ones you see in search results.",
-    "description": "Content on modal dialog window, when a user is about to delete all visible cookies."
-  },
-
-  "modalMenuAlertContent": {
-    "message": "Your action will erase all cookies from the current navigation context ($cookie_number$)!\nWould you like to continue?",
-    "description": "Content of the modal JS alert when a user is about to delete all visible cookies.",
+  "extName": {
+    "message": "CookieTin — Cookie Manager & Editor"
+  },
+  "extDescription": {
+    "message": "View, edit, protect, import and export cookies. Containers, private windows and partitioned cookies. Nothing leaves your browser."
+  },
+  "settings": {
+    "message": "Settings"
+  },
+  "support": {
+    "message": "Support"
+  },
+  "cancel": {
+    "message": "Cancel"
+  },
+  "close": {
+    "message": "Close"
+  },
+  "copy": {
+    "message": "Copy"
+  },
+  "copied": {
+    "message": "Copied!"
+  },
+  "delete": {
+    "message": "Delete"
+  },
+  "save": {
+    "message": "Save"
+  },
+  "download": {
+    "message": "Download"
+  },
+  "import": {
+    "message": "Import"
+  },
+  "export": {
+    "message": "Export"
+  },
+  "refresh": {
+    "message": "Refresh"
+  },
+  "undo": {
+    "message": "Undo"
+  },
+  "protect": {
+    "message": "Protect"
+  },
+  "unprotect": {
+    "message": "Unprotect"
+  },
+  "protected": {
+    "message": "Protected"
+  },
+  "select": {
+    "message": "Select"
+  },
+  "storeDefault": {
+    "message": "Default"
+  },
+  "storePrivate": {
+    "message": "Private windows"
+  },
+  "accessNeeded": {
+    "message": "CookieTin needs access to all sites to see and edit their cookies."
+  },
+  "accessGrant": {
+    "message": "Allow"
+  },
+  "deletedCount": {
+    "message": "Deleted cookies: $P1$.",
     "placeholders": {
-      "cookie_number" : {
-        "content" : "$1"
+      "p1": {
+        "content": "$1"
       }
     }
   },
-
-  "modalClipboardTitle": {
-    "message": "Export $cookie_number$ cookie(s)",
-    "description": "Header that tells the user how many cookies are exported in the textarea.",
+  "keptProtected": {
+    "message": "Protected ones kept: $P1$.",
     "placeholders": {
-      "cookie_number" : {
-        "content" : "$1"
+      "p1": {
+        "content": "$1"
       }
     }
   },
-
-  "noCookieAlert": {
-    "message": "No cookies in this tab.",
-    "description": "Alert when there is no cookie in domain and cookie lists."
-  },
-
-  "cookieRestoredSuccess": {
-    "message": "$number$ cookie(s) successfully restored!",
-    "description": "Alert when a file is imported with success.",
+  "deleteFailed": {
+    "message": "Failed: $P1$.",
     "placeholders": {
-      "number" : {
-        "content" : "$1"
+      "p1": {
+        "content": "$1"
       }
     }
   },
-
-  "cookieRestoredError": {
-    "message": "Error, no cookie restored.<br>$json_error$",
-    "description": "Alert when a file is imported with an error from the json parser.",
+  "restoredCount": {
+    "message": "Restored cookies: $P1$.",
     "placeholders": {
-      "json_error" : {
-        "content" : "$1"
+      "p1": {
+        "content": "$1"
       }
     }
   },
-
-  "cookieRestoredSingleError": {
-    "message": "Error, at least one cookie was not restored:<br>$error$<br>Don't worry; most of the time these are session cookies that have expired.",
-    "description": "Alert when a file is imported with an error during the save process.",
+  "protectedStay": {
+    "message": "$P1$ protected will stay",
     "placeholders": {
-      "error" : {
-        "content" : "$1"
+      "p1": {
+        "content": "$1"
       }
     }
   },
-
-
-
-
-  "oSettings": {
-    "message": "Settings",
-    "description": "Tab title"
+  "noSiteHere": {
+    "message": "No website in this tab"
   },
-
-  "oMyProtectedCookies": {
-    "message": "My protected cookies",
-    "description": "Tab title"
+  "popupManageSite": {
+    "message": "Cookies of $P1$",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
   },
-
-  "oShortcuts": {
-    "message": "Shortcuts",
-    "description": "Tab title"
+  "popupOpenManager": {
+    "message": "Open cookie manager"
   },
-
-  "oAbout": {
-    "message": "About",
-    "description": "Tab title"
+  "popupDeleteSite": {
+    "message": "Delete cookies of $P1$",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
   },
-
-  "oPrivacy": {
-    "message": "Privacy",
-    "description": "Settings page: Section title"
+  "popupClearStorage": {
+    "message": "Clear site data"
   },
-
-  "oDelete_all_on_restart": {
-    "message": " Delete all cookies on restart",
-    "description": "Settings page: Checkbox"
+  "popupClearStorageHint": {
+    "message": "localStorage, sessionStorage, IndexedDB, cache"
   },
-
-  "oImport_protected_cookies": {
-    "message": " Import cookies as protected cookies",
-    "description": "Settings page: Checkbox"
+  "popupDeleteStore": {
+    "message": "Delete all cookies: $P1$",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
   },
-
-  "oPrevent_protected_cookies_deletion": {
-    "message": " Prevent sites from clearing protected cookies, even if they are expired",
-    "description": "Settings page: Checkbox"
+  "popupConfirmStore": {
+    "message": "Click again to delete $P1$ cookies",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
   },
-
-  "oAppearance": {
-    "message": "Appearance",
-    "description": "Settings page: Section title"
+  "storageCleared": {
+    "message": "Site data cleared."
   },
-
-  "oSkin": {
-    "message": "Skin:",
-    "description": "Settings page: Skin selector"
+  "searchPlaceholder": {
+    "message": "Search: domain  name:session  value:abc"
   },
-
-  "oDefault": {
-    "message": "Default",
-    "description": "Settings page: default skin"
+  "allStores": {
+    "message": "All windows & containers"
   },
-
-  "oOpen_in_new_tab": {
-    "message": " Always open Cookie Quick Manager in new tab",
-    "description": "Settings page: Checkbox"
+  "subdomains": {
+    "message": "Subdomains"
   },
-
-  "oDisplay_deletion_alert": {
-    "message": " Display an alert before removing cookies from entire browsing context(s) (\"Delete all\" button or \"Delete Current Context cookies\" popup menu entry)",
-    "description": "Settings page: Checkbox"
+  "subdomainsHint": {
+    "message": "Selecting a domain also shows the cookies of its subdomains"
   },
-
-  "oExport": {
-    "message": "Export",
-    "description": "Settings page: Section title"
+  "newCookieShort": {
+    "message": "New"
   },
-
-  "oTemplate": {
-    "message": "Template:",
-    "description": "Settings page: Template selector"
+  "domains": {
+    "message": "Domains"
   },
-
-  "oYourData": {
-    "message": "Your data",
-    "description": "Settings page: Section title"
+  "cookies": {
+    "message": "Cookies"
   },
-
-  "aboutBackupButton": {
-    "message": "Backup user data to a file",
-    "description": "Settings page: Backup user data"
+  "details": {
+    "message": "Details"
   },
-
-  "aboutRestoreButton": {
-    "message": "Restore user data from a file",
-    "description": "Settings page: Restore user data from file"
+  "showAll": {
+    "message": "Show all"
   },
-
-  "aboutOr": {
-    "message": "Or, you can...",
-    "description": "Settings page: Sentence between backup/restore buttons and the button to clear user data"
+  "nothingFound": {
+    "message": "Nothing found"
   },
-
-  "aboutResetButton": {
-    "message": "Go back to default settings",
-    "description": "Settings page: Reset settings"
+  "noCookies": {
+    "message": "No cookies here yet"
   },
-
-  "oManagementOfProtectedCookies": {
-    "message": "Management of protected cookies",
-    "description": "My protected cookies page: title"
+  "noCookiesHere": {
+    "message": "No cookies"
   },
-
-  "oManagementOfProtectedCookiesText": {
-    "message": "Here you can view all of protected cookies and delete them if you wish.",
-    "description": "My protected cookies page: text"
+  "selectAll": {
+    "message": "Select all"
   },
-
-  "unprotectSelectedCookiesButton": {
-    "message": "Unprotect selected cookies",
-    "description": "My protected cookies page: Unprotect selected cookies button"
+  "selectedCount": {
+    "message": "Selected: $P1$",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
   },
-
-  "oNoProtectedCookiesAlert": {
-    "message": "You currently have no protected cookie.",
-    "description": "My protected cookies page: Alert when there is no data to display"
+  "kindAll": {
+    "message": "All"
   },
-
-  "oLicense": {
-    "message": "Source code (Under GPLv3 license)",
-    "description": "About page: Link for GitHub sources"
+  "kindSession": {
+    "message": "Session"
   },
-
-  "oIssues": {
-    "message": "Report an issue",
-    "description": "About page: Link for GitHub issues"
+  "kindPersistent": {
+    "message": "With expiry"
   },
-
-  "oThanks": {
-    "message": "Thanks (help and bug reports):",
-    "description": "About page: List of thanks"
+  "kindProtected": {
+    "message": "Protected"
   },
-
-  "oTranslations": {
-    "message": "Translations:",
-    "description": "About page: List of contributors for translations"
+  "kindPartitioned": {
+    "message": "Partitioned"
   },
-
-  "oExternalDependencies": {
-    "message": "External dependencies (GPLv3 compatible):",
-    "description": "About page: List of external dependencies"
+  "kindInsecure": {
+    "message": "Not Secure"
   },
-
-  "oSwitchDomains": {
-    "message": "Switch to the list of domains",
-    "description": "Keyboard shortcut description: ctrl+left"
+  "copyTo": {
+    "message": "Copy to…"
   },
-
-  "oSwitchCookies": {
-    "message": "Switch to the list of cookies",
-    "description": "Keyboard shortcut description: ctrl+right"
+  "copyToHint": {
+    "message": "Copy the selected cookies to another container or window"
   },
-
-  "oDelCurrentCookie": {
-    "message": "Delete the current cookie",
-    "description": "Keyboard shortcut description: suppr"
+  "copiedToStore": {
+    "message": "Copied $P1$ cookies to $P2$.",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      },
+      "p2": {
+        "content": "$2"
+      }
+    }
   },
-
-  "oSearchDomain": {
-    "message": "Search a domain",
-    "description": "Keyboard shortcut description: ctrl+F"
+  "partitionedIn": {
+    "message": "Partitioned: stored for $P1$",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
   },
-
-  "oRestoreFile": {
-    "message": "Restore a JSON backup",
-    "description": "Keyboard shortcut description: ctrl+O"
+  "hasProtected": {
+    "message": "Has protected cookies"
   },
-
-  "oExportAll": {
-    "message": "Export all cookies to a file",
-    "description": "Keyboard shortcut description: ctrl+S"
+  "noName": {
+    "message": "(no name)"
   },
-
-
-
-  "popupSimple": {
-    "message": "Manage all Cookies",
-    "description": "Popup menu: Display the main interface of CQM"
+  "tooMany": {
+    "message": "Showing the first $P1$. Narrow down the search to see the rest.",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
   },
-
-  "popupSearch": {
-    "message": "Search Cookies for: ",
-    "description": "Popup menu: Search and edit cookies in the main interface of CQM"
+  "pickCookie": {
+    "message": "Pick a cookie to see and edit it."
   },
-
-  "popupDeleteCurrentCookies": {
-    "message": "Delete current Site Cookies",
-    "description": "Popup menu: Delete current Site Cookies"
+  "shortcutsHint": {
+    "message": "Ctrl/⌘ or Shift + click selects several. / — search, Delete — delete, Ctrl+S — save."
   },
-
-  "popupDeleteContextCookies": {
-    "message": "Delete current Context Cookies",
-    "description": "Popup menu: Delete current Context Cookies"
+  "bulkHint": {
+    "message": "Use the buttons above the list: delete, protect, export or copy them."
   },
-
-  "popupDeleteCurrentLocalStorage": {
-    "message": "Delete current Site LocalStorage",
-    "description": "Popup menu: Delete current Site LocalStorage"
+  "allProtected": {
+    "message": "These cookies are protected. Unprotect them first."
   },
-
-  "popupOptions": {
-    "message": "Options",
-    "description": "Popup menu: go to options page"
+  "confirmTitle": {
+    "message": "Are you sure?"
+  },
+  "confirmDelete": {
+    "message": "Delete $P1$ cookies?",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "protectedCount": {
+    "message": "Protected cookies: $P1$.",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "unprotectedCount": {
+    "message": "Protection removed: $P1$.",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "saved": {
+    "message": "Saved."
+  },
+  "saveFailed": {
+    "message": "The browser didn’t accept the cookie: $P1$",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "discardChanges": {
+    "message": "Discard unsaved changes?"
+  },
+  "newCookie": {
+    "message": "New cookie"
+  },
+  "editCookie": {
+    "message": "Cookie"
+  },
+  "unsaved": {
+    "message": "unsaved"
+  },
+  "unsavedHint": {
+    "message": "Press Save or Ctrl+S"
+  },
+  "fieldName": {
+    "message": "Name"
+  },
+  "fieldValue": {
+    "message": "Value"
+  },
+  "bytes": {
+    "message": "$P1$ bytes",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "urlDecode": {
+    "message": "URL decode"
+  },
+  "urlDecodeHint": {
+    "message": "%20 → space"
+  },
+  "urlEncode": {
+    "message": "URL encode"
+  },
+  "b64Decode": {
+    "message": "Base64 decode"
+  },
+  "b64Encode": {
+    "message": "Base64 encode"
+  },
+  "valueToolFailed": {
+    "message": "This value can’t be decoded that way."
+  },
+  "jwtDecoded": {
+    "message": "JSON Web Token (decoded)"
+  },
+  "fieldDomain": {
+    "message": "Domain"
+  },
+  "fieldPath": {
+    "message": "Path"
+  },
+  "fieldIncludeSubdomains": {
+    "message": "Also send to subdomains"
+  },
+  "fieldStore": {
+    "message": "Window / container"
+  },
+  "fieldSameSite": {
+    "message": "SameSite"
+  },
+  "sameSiteUnspecified": {
+    "message": "Not set (browser default)"
+  },
+  "sameSiteLax": {
+    "message": "Lax"
+  },
+  "sameSiteStrict": {
+    "message": "Strict"
+  },
+  "sameSiteNone": {
+    "message": "None (cross-site)"
+  },
+  "fieldExpires": {
+    "message": "Expires"
+  },
+  "fieldSession": {
+    "message": "Session cookie"
+  },
+  "fieldSecureHint": {
+    "message": "Sent over HTTPS only"
+  },
+  "fieldHttpOnlyHint": {
+    "message": "Hidden from page scripts"
+  },
+  "advanced": {
+    "message": "Advanced"
+  },
+  "fieldPartition": {
+    "message": "Partitioned for site"
+  },
+  "fieldPartitionHint": {
+    "message": "For cookies that a site stores while embedded in another site (Total Cookie Protection, CHIPS). Leave empty for normal cookies."
+  },
+  "fieldFirstParty": {
+    "message": "First-party domain (First-Party Isolation)"
+  },
+  "duplicate": {
+    "message": "Duplicate"
+  },
+  "duplicateHint": {
+    "message": "Make a copy to change and save separately"
+  },
+  "unprotectFirst": {
+    "message": "Protected: unprotect it first"
+  },
+  "errDomainRequired": {
+    "message": "Enter a domain."
+  },
+  "errExpiresPast": {
+    "message": "The expiry date is in the past: the browser will delete the cookie at once."
+  },
+  "errPrefixSecure": {
+    "message": "Names starting with __Secure- or __Host- need Secure."
+  },
+  "errHostPrefix": {
+    "message": "__Host- cookies need path / and no subdomains."
+  },
+  "errSameSiteNone": {
+    "message": "SameSite=None needs Secure."
+  },
+  "errPartitionedSecure": {
+    "message": "Partitioned cookies need Secure."
+  },
+  "exportTitle": {
+    "message": "Export cookies"
+  },
+  "scopeSelected": {
+    "message": "Selected"
+  },
+  "scopeList": {
+    "message": "In the list"
+  },
+  "scopeAll": {
+    "message": "All found"
+  },
+  "formatJson": {
+    "message": "JSON (Cookie-Editor, EditThisCookie)"
+  },
+  "formatNetscape": {
+    "message": "cookies.txt (curl, wget, yt-dlp)"
+  },
+  "formatHeader": {
+    "message": "Cookie header (name=value; …)"
+  },
+  "formatCqm": {
+    "message": "JSON (Cookie Quick Manager)"
+  },
+  "format_json": {
+    "message": "JSON"
+  },
+  "format_netscape": {
+    "message": "cookies.txt"
+  },
+  "format_cqm": {
+    "message": "Cookie Quick Manager"
+  },
+  "format_playwright": {
+    "message": "Playwright"
+  },
+  "exportWarning": {
+    "message": "Exported cookies can log anyone into your accounts. Keep them private."
+  },
+  "importTitle": {
+    "message": "Import cookies"
+  },
+  "importHint": {
+    "message": "JSON from CookieTin, Cookie-Editor, EditThisCookie, Cookie Quick Manager or Playwright, or a cookies.txt file."
+  },
+  "chooseFile": {
+    "message": "Choose file…"
+  },
+  "orPaste": {
+    "message": "or paste the text below"
+  },
+  "importFound": {
+    "message": "Found $P1$ cookies ($P2$).",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      },
+      "p2": {
+        "content": "$2"
+      }
+    }
+  },
+  "importSkipped": {
+    "message": "Skipped (expired or unreadable): $P1$.",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "importUnreadable": {
+    "message": "Can’t read this text as cookies."
+  },
+  "importInto": {
+    "message": "Into"
+  },
+  "importKeepStores": {
+    "message": "Containers from the file"
+  },
+  "importProtect": {
+    "message": "Protect imported cookies"
+  },
+  "importRun": {
+    "message": "Import $P1$",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "importedCount": {
+    "message": "Imported cookies: $P1$.",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "importFailed": {
+    "message": "Not accepted by the browser: $P1$.",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsTitle": {
+    "message": "Settings"
+  },
+  "secCleanup": {
+    "message": "Automatic cleanup"
+  },
+  "optDeleteOnStartup": {
+    "message": "Delete cookies when the browser starts"
+  },
+  "optDeleteOnStartupHint": {
+    "message": "Protected cookies stay, so you remain logged in where you want."
+  },
+  "optCleanup": {
+    "message": "Clean up regularly"
+  },
+  "cleanupOff": {
+    "message": "Off"
+  },
+  "cleanupEvery": {
+    "message": "Every $P1$ h",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "optKeepOpenTabs": {
+    "message": "Keep cookies of sites open in tabs"
+  },
+  "optKeepOpenTabsHint": {
+    "message": "So cleanup doesn’t log you out of what you are using now."
+  },
+  "cleanupNote": {
+    "message": "Protected cookies are never deleted by cleanup."
+  },
+  "secProtection": {
+    "message": "Protected cookies"
+  },
+  "protectionText": {
+    "message": "Protected cookies survive CookieTin’s deletions and cleanups. Protect them in the manager (lock button)."
+  },
+  "optGuard": {
+    "message": "Also restore them when a site or the browser deletes them"
+  },
+  "optGuardHint": {
+    "message": "E.g. when a site logs you out by clearing its cookie."
+  },
+  "noProtected": {
+    "message": "No protected cookies yet."
+  },
+  "unprotectDomain": {
+    "message": "Unprotect all cookies of this domain"
+  },
+  "secInterface": {
+    "message": "Interface"
+  },
+  "optOpenIn": {
+    "message": "Open the manager in"
+  },
+  "openTab": {
+    "message": "A tab"
+  },
+  "openWindow": {
+    "message": "Its own window"
+  },
+  "optTheme": {
+    "message": "Theme"
+  },
+  "themeAuto": {
+    "message": "As in the system"
+  },
+  "themeLight": {
+    "message": "Light"
+  },
+  "themeDark": {
+    "message": "Dark"
+  },
+  "optExportFormat": {
+    "message": "Default export format"
+  },
+  "optConfirm": {
+    "message": "Ask before deleting several cookies"
+  },
+  "optShowStoreDelete": {
+    "message": "Show “Delete all cookies” in the toolbar menu"
+  },
+  "optShowStoreDeleteHint": {
+    "message": "Turn off if you tend to click it by accident."
+  },
+  "optAutoRefresh": {
+    "message": "Update the manager live when cookies change"
+  },
+  "secPrivate": {
+    "message": "Private windows"
+  },
+  "privateAllowed": {
+    "message": "CookieTin can see the cookies of private windows while one is open."
+  },
+  "privateHowFirefox": {
+    "message": "To manage private-window cookies, allow CookieTin there: Add-ons and themes → CookieTin → “Run in Private Windows”."
+  },
+  "privateHowChrome": {
+    "message": "To manage Incognito cookies, open the extension’s details and turn on “Allow in Incognito”."
+  },
+  "secBackup": {
+    "message": "Backup"
+  },
+  "backupText": {
+    "message": "Settings and the list of protected cookies (not the cookies themselves)."
+  },
+  "backupSave": {
+    "message": "Save to file"
+  },
+  "backupRestore": {
+    "message": "Restore from file…"
+  },
+  "reset": {
+    "message": "Reset everything"
+  },
+  "resetConfirm": {
+    "message": "Reset all settings and forget protected cookies?"
+  },
+  "resetDone": {
+    "message": "Everything is reset."
+  },
+  "restoreDone": {
+    "message": "Restored. Protected cookies in the file: $P1$.",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "restoreFailed": {
+    "message": "This file is not a CookieTin or Cookie Quick Manager backup."
+  },
+  "migrateText": {
+    "message": "Moving from Cookie Quick Manager? In its settings click “Backup user data”, then restore that file here: your protected cookies and settings come along."
+  },
+  "supportTitle": {
+    "message": "Support CookieTin"
+  },
+  "supportText": {
+    "message": "CookieTin is free, open source and has no ads or tracking. If it saves you time, a donation helps keep it maintained."
+  },
+  "supportBoosty": {
+    "message": "Donate on Boosty"
+  },
+  "supportNetworkNote": {
+    "message": "Send only the listed coins in the listed network."
+  },
+  "basedOn": {
+    "message": "Based on"
+  },
+  "byAuthor": {
+    "message": "by Ysard"
+  },
+  "privacy": {
+    "message": "Privacy"
   }
-
 }

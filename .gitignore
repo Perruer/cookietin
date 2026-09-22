@@ -1,3 +1,4 @@
+node_modules/
 dist/
-build/
-poc/
+dist-e2e/
+*.log

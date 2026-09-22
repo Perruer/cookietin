@@ -1,31 +1,30 @@
 {
-  "manifest_version": 2,
-  "description": "__MSG_extensionDescription__",
-  "homepage_url": "https://github.com/ysard/cookie-quick-manager",
-  "author": "Ysard",
-  "name": "Cookie Quick Manager",
-  "version": "0.5rc2",
+  "manifest_version": 3,
+  "name": "__MSG_extName__",
+  "short_name": "CookieTin",
+  "description": "__MSG_extDescription__",
   "default_locale": "en",
-  "permissions": ["cookies","<all_urls>","activeTab", "storage", "browsingData", "contextualIdentities", "privacy"],
-  "optional_permissions": ["clipboardWrite"],
-  "browser_action": {
-    "browser_style": true,
-    "default_title": "Cookie Quick Manager",
-    "default_popup": "menu.html",
+  "homepage_url": "https://github.com/Perruer/cookietin",
+  "permissions": ["cookies", "storage", "alarms", "scripting", "browsingData"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_title": "CookieTin",
+    "default_popup": "popup/popup.html",
     "default_icon": {
-      "48": "icons/icon48.png",
-      "96": "icons/icon96.png"
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png"
     }
   },
-  "icons": {
-    "48": "icons/icon48.png",
-    "96": "icons/icon96.png"
-  },
-  "background": {
-    "scripts": ["api.js", "background-script.js"]
-  },
   "options_ui": {
-    "page": "options.html",
+    "page": "options/options.html",
     "open_in_tab": true
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png",
+    "128": "icons/icon-128.png"
   }
 }

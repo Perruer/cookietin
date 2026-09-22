@@ -1,0 +1,33 @@
+/* CookieTin — Copyright (C) 2026 Perruer. SPDX-License-Identifier: GPL-3.0-or-later */
+body { width: 360px; font-size: 14px; }
+main { padding: 10px 10px 8px; }
+.pop-head { display: flex; align-items: center; gap: 8px; padding: 0 2px 8px; font-size: 15px; }
+.pop-head .grow { flex: 1; }
+.site { display: flex; align-items: center; gap: 8px; padding: 8px 10px; border-radius: 10px; background: var(--bg-2); margin-bottom: 8px; min-height: 36px; }
+.site .host { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; flex: 1; }
+.site .fav { width: 16px; height: 16px; border-radius: 4px; background: var(--line); flex: none; }
+.site .store-badge { margin-left: auto; }
+.menu { display: grid; gap: 2px; }
+.menu .item {
+  display: flex; align-items: center; gap: 10px; width: 100%; text-align: left;
+  background: transparent; color: var(--ink); border: 1px solid transparent; font-weight: 500; padding: 8px 10px; border-radius: 9px;
+}
+.menu .item:hover:not(:disabled) { background: var(--bg-2); border-color: transparent; }
+.menu .item svg { width: 18px; height: 18px; color: var(--muted); flex: none; }
+.menu .item .label { flex: 1; display: flex; flex-direction: column; min-width: 0; overflow-wrap: anywhere; }
+.menu .item small { color: var(--muted); font-weight: 400; font-size: 12px; }
+.menu .item.danger svg { color: var(--bad); }
+.menu .item.confirm { border-color: var(--bad); background: var(--accent-soft); }
+.menu .item.confirm .label { color: var(--bad); font-weight: 600; }
+.menu .item:disabled { opacity: 0.45; }
+.count { font-size: 12px; font-weight: 600; color: var(--muted); background: var(--bg-2); border-radius: 10px; padding: 1px 8px; }
+.menu .item:hover .count { background: var(--card); }
+.note { display: flex; gap: 10px; align-items: center; margin: 8px 2px 0; padding: 8px 10px; border-radius: 9px; background: var(--accent-soft); font-size: 13px; }
+.note span { flex: 1; }
+button.link { background: none; border: 0; padding: 0; color: var(--accent); font-weight: 700; text-decoration: underline; }
+button.link:hover { background: none; color: var(--accent-hover); }
+.pop-foot { display: flex; justify-content: flex-end; padding: 8px 4px 0; font-size: 12.5px; }
+.pop-foot a { color: var(--muted); text-decoration: none; display: inline-flex; gap: 4px; align-items: center; }
+.pop-foot a:hover { color: var(--accent); }
+.pop-foot svg { width: 14px; height: 14px; }
+.banner { margin-bottom: 8px; }

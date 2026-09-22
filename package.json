@@ -1,0 +1,54 @@
+{
+  "name": "cookietin",
+  "version": "1.0.0",
+  "private": true,
+  "description": "View, edit, protect, import and export cookies. Containers, private windows and partitioned cookies. Based on Cookie Quick Manager.",
+  "license": "GPL-3.0-or-later",
+  "author": "Perruer",
+  "homepage": "https://github.com/Perruer/cookietin",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Perruer/cookietin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Perruer/cookietin/issues"
+  },
+  "contributors": [
+    "Ysard (original Cookie Quick Manager, https://github.com/ysard/cookie-quick-manager)"
+  ],
+  "funding": [
+    {
+      "type": "individual",
+      "url": "https://boosty.to/mikio_kuroki/donate"
+    },
+    {
+      "type": "individual",
+      "url": "https://github.com/Perruer/cookietin#support-the-project"
+    }
+  ],
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/build.mjs --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "node scripts/test.mjs",
+    "lint": "node scripts/build.mjs && web-ext lint --source-dir dist/firefox",
+    "test:e2e": "node test/e2e/run.mjs",
+    "test:e2e:edge": "node test/e2e/run.mjs edge",
+    "icons": "node scripts/icons.mjs",
+    "locales": "node scripts/locales.mjs",
+    "start:firefox": "node scripts/build.mjs && web-ext run --source-dir dist/firefox",
+    "start:chrome": "node scripts/build.mjs && web-ext run --source-dir dist/chrome -t chromium",
+    "package": "node scripts/build.mjs && web-ext build -s dist/chrome -a dist --filename cookietin-chrome-{version}.zip -o && web-ext build -s dist/firefox -a dist --filename cookietin-firefox-{version}.zip -o && node scripts/source-zip.mjs"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.3.0",
+    "esbuild": "^0.28.2",
+    "puppeteer": "^24.43.1",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "web-ext": "^10.7.0"
+  },
+  "dependencies": {
+    "preact": "^10.29.8"
+  }
+}

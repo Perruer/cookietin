@@ -1,0 +1,12 @@
+/* CookieTin — Copyright (C) 2026 Perruer. SPDX-License-Identifier: GPL-3.0-or-later */
+.protected { display: grid; gap: 8px; margin-top: 12px; }
+.prot-domain { border: 1px solid var(--line); border-radius: 10px; padding: 6px 10px 8px; }
+.prot-head { display: flex; align-items: center; gap: 8px; }
+.prot-head svg { width: 15px; height: 15px; color: var(--muted); }
+.prot-head .grow { flex: 1; }
+.prot-names { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+.prot-name { display: inline-flex; align-items: center; gap: 2px; background: var(--bg-2); border-radius: 8px; padding: 1px 4px 1px 8px; }
+.prot-name code { font-size: 12.5px; }
+button.x { background: none; border: 0; color: var(--muted); padding: 0 5px; font-size: 16px; line-height: 1; }
+button.x:hover { color: var(--bad); background: none; }
+.card h2 .pill { vertical-align: 2px; margin-left: 4px; }

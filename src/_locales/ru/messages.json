@@ -1,0 +1,706 @@
+{
+  "extName": {
+    "message": "CookieTin — менеджер и редактор cookie"
+  },
+  "extDescription": {
+    "message": "Просмотр, правка, защита, импорт и экспорт cookie. Контейнеры, приватные окна, изолированные cookie. Данные не покидают браузер."
+  },
+  "settings": {
+    "message": "Настройки"
+  },
+  "support": {
+    "message": "Поддержать"
+  },
+  "cancel": {
+    "message": "Отмена"
+  },
+  "close": {
+    "message": "Закрыть"
+  },
+  "copy": {
+    "message": "Копировать"
+  },
+  "copied": {
+    "message": "Скопировано!"
+  },
+  "delete": {
+    "message": "Удалить"
+  },
+  "save": {
+    "message": "Сохранить"
+  },
+  "download": {
+    "message": "Скачать"
+  },
+  "import": {
+    "message": "Импорт"
+  },
+  "export": {
+    "message": "Экспорт"
+  },
+  "refresh": {
+    "message": "Обновить"
+  },
+  "undo": {
+    "message": "Отменить"
+  },
+  "protect": {
+    "message": "Защитить"
+  },
+  "unprotect": {
+    "message": "Снять защиту"
+  },
+  "protected": {
+    "message": "Защищено"
+  },
+  "select": {
+    "message": "Выбрать"
+  },
+  "storeDefault": {
+    "message": "Обычные окна"
+  },
+  "storePrivate": {
+    "message": "Приватные окна"
+  },
+  "accessNeeded": {
+    "message": "CookieTin нужен доступ ко всем сайтам, чтобы видеть и править их cookie."
+  },
+  "accessGrant": {
+    "message": "Разрешить"
+  },
+  "deletedCount": {
+    "message": "Удалено cookie: $P1$.",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "keptProtected": {
+    "message": "Защищённые оставлены: $P1$.",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "deleteFailed": {
+    "message": "Не удалось: $P1$.",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "restoredCount": {
+    "message": "Восстановлено cookie: $P1$.",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "protectedStay": {
+    "message": "защищённые останутся: $P1$",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "noSiteHere": {
+    "message": "В этой вкладке нет сайта"
+  },
+  "popupManageSite": {
+    "message": "Cookie сайта $P1$",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "popupOpenManager": {
+    "message": "Открыть менеджер cookie"
+  },
+  "popupDeleteSite": {
+    "message": "Удалить cookie сайта $P1$",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "popupClearStorage": {
+    "message": "Очистить данные сайта"
+  },
+  "popupClearStorageHint": {
+    "message": "localStorage, sessionStorage, IndexedDB, кэш"
+  },
+  "popupDeleteStore": {
+    "message": "Удалить все cookie: $P1$",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "popupConfirmStore": {
+    "message": "Нажмите ещё раз, чтобы удалить cookie: $P1$",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "storageCleared": {
+    "message": "Данные сайта очищены."
+  },
+  "searchPlaceholder": {
+    "message": "Поиск: домен  name:session  value:abc"
+  },
+  "allStores": {
+    "message": "Все окна и контейнеры"
+  },
+  "subdomains": {
+    "message": "Поддомены"
+  },
+  "subdomainsHint": {
+    "message": "При выборе домена показывать и cookie его поддоменов"
+  },
+  "newCookieShort": {
+    "message": "Создать"
+  },
+  "domains": {
+    "message": "Домены"
+  },
+  "cookies": {
+    "message": "Cookie"
+  },
+  "details": {
+    "message": "Подробности"
+  },
+  "showAll": {
+    "message": "Показать все"
+  },
+  "nothingFound": {
+    "message": "Ничего не найдено"
+  },
+  "noCookies": {
+    "message": "Cookie пока нет"
+  },
+  "noCookiesHere": {
+    "message": "Нет cookie"
+  },
+  "selectAll": {
+    "message": "Выбрать все"
+  },
+  "selectedCount": {
+    "message": "Выбрано: $P1$",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "kindAll": {
+    "message": "Все"
+  },
+  "kindSession": {
+    "message": "Сеансовые"
+  },
+  "kindPersistent": {
+    "message": "С датой истечения"
+  },
+  "kindProtected": {
+    "message": "Защищённые"
+  },
+  "kindPartitioned": {
+    "message": "Изолированные"
+  },
+  "kindInsecure": {
+    "message": "Без Secure"
+  },
+  "copyTo": {
+    "message": "Копировать в…"
+  },
+  "copyToHint": {
+    "message": "Скопировать выбранные cookie в другой контейнер или окно"
+  },
+  "copiedToStore": {
+    "message": "Скопировано cookie: $P1$ → $P2$.",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      },
+      "p2": {
+        "content": "$2"
+      }
+    }
+  },
+  "partitionedIn": {
+    "message": "Изолированный: хранится для сайта $P1$",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "hasProtected": {
+    "message": "Есть защищённые cookie"
+  },
+  "noName": {
+    "message": "(без имени)"
+  },
+  "tooMany": {
+    "message": "Показаны первые $P1$. Уточните поиск, чтобы увидеть остальные.",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "pickCookie": {
+    "message": "Выберите cookie, чтобы посмотреть и изменить его."
+  },
+  "shortcutsHint": {
+    "message": "Ctrl/⌘ или Shift + клик выделяет несколько. / — поиск, Delete — удалить, Ctrl+S — сохранить."
+  },
+  "bulkHint": {
+    "message": "Действия — в панели над списком: удалить, защитить, экспортировать или скопировать."
+  },
+  "allProtected": {
+    "message": "Эти cookie защищены. Сначала снимите защиту."
+  },
+  "confirmTitle": {
+    "message": "Точно?"
+  },
+  "confirmDelete": {
+    "message": "Удалить cookie: $P1$?",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "protectedCount": {
+    "message": "Защищено cookie: $P1$.",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "unprotectedCount": {
+    "message": "Защита снята: $P1$.",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "saved": {
+    "message": "Сохранено."
+  },
+  "saveFailed": {
+    "message": "Браузер не принял cookie: $P1$",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "discardChanges": {
+    "message": "Отменить несохранённые изменения?"
+  },
+  "newCookie": {
+    "message": "Новый cookie"
+  },
+  "editCookie": {
+    "message": "Cookie"
+  },
+  "unsaved": {
+    "message": "не сохранено"
+  },
+  "unsavedHint": {
+    "message": "Нажмите «Сохранить» или Ctrl+S"
+  },
+  "fieldName": {
+    "message": "Имя"
+  },
+  "fieldValue": {
+    "message": "Значение"
+  },
+  "bytes": {
+    "message": "$P1$ байт",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "urlDecode": {
+    "message": "URL → текст"
+  },
+  "urlDecodeHint": {
+    "message": "%20 → пробел"
+  },
+  "urlEncode": {
+    "message": "Текст → URL"
+  },
+  "b64Decode": {
+    "message": "Из Base64"
+  },
+  "b64Encode": {
+    "message": "В Base64"
+  },
+  "valueToolFailed": {
+    "message": "Это значение так не раскодировать."
+  },
+  "jwtDecoded": {
+    "message": "JSON Web Token (расшифровка)"
+  },
+  "fieldDomain": {
+    "message": "Домен"
+  },
+  "fieldPath": {
+    "message": "Путь"
+  },
+  "fieldIncludeSubdomains": {
+    "message": "Отправлять и поддоменам"
+  },
+  "fieldStore": {
+    "message": "Окно / контейнер"
+  },
+  "fieldSameSite": {
+    "message": "SameSite"
+  },
+  "sameSiteUnspecified": {
+    "message": "Не задан (как решит браузер)"
+  },
+  "sameSiteLax": {
+    "message": "Lax"
+  },
+  "sameSiteStrict": {
+    "message": "Strict"
+  },
+  "sameSiteNone": {
+    "message": "None (межсайтовый)"
+  },
+  "fieldExpires": {
+    "message": "Истекает"
+  },
+  "fieldSession": {
+    "message": "Сеансовый"
+  },
+  "fieldSecureHint": {
+    "message": "Только по HTTPS"
+  },
+  "fieldHttpOnlyHint": {
+    "message": "Недоступен скриптам страницы"
+  },
+  "advanced": {
+    "message": "Дополнительно"
+  },
+  "fieldPartition": {
+    "message": "Изолирован для сайта"
+  },
+  "fieldPartitionHint": {
+    "message": "Для cookie, которые сайт сохраняет, будучи встроенным в другой сайт (Total Cookie Protection, CHIPS). Для обычных cookie оставьте пустым."
+  },
+  "fieldFirstParty": {
+    "message": "Первичный домен (First-Party Isolation)"
+  },
+  "duplicate": {
+    "message": "Дублировать"
+  },
+  "duplicateHint": {
+    "message": "Сделать копию, чтобы изменить и сохранить отдельно"
+  },
+  "unprotectFirst": {
+    "message": "Защищён: сначала снимите защиту"
+  },
+  "errDomainRequired": {
+    "message": "Укажите домен."
+  },
+  "errExpiresPast": {
+    "message": "Дата истечения в прошлом: браузер сразу удалит cookie."
+  },
+  "errPrefixSecure": {
+    "message": "Имена с __Secure- и __Host- требуют Secure."
+  },
+  "errHostPrefix": {
+    "message": "Cookie с __Host- требуют путь / и без поддоменов."
+  },
+  "errSameSiteNone": {
+    "message": "SameSite=None требует Secure."
+  },
+  "errPartitionedSecure": {
+    "message": "Изолированным cookie нужен Secure."
+  },
+  "exportTitle": {
+    "message": "Экспорт cookie"
+  },
+  "scopeSelected": {
+    "message": "Выбранные"
+  },
+  "scopeList": {
+    "message": "В списке"
+  },
+  "scopeAll": {
+    "message": "Все найденные"
+  },
+  "formatJson": {
+    "message": "JSON (Cookie-Editor, EditThisCookie)"
+  },
+  "formatNetscape": {
+    "message": "cookies.txt (curl, wget, yt-dlp)"
+  },
+  "formatHeader": {
+    "message": "Заголовок Cookie (name=value; …)"
+  },
+  "formatCqm": {
+    "message": "JSON (Cookie Quick Manager)"
+  },
+  "format_json": {
+    "message": "JSON"
+  },
+  "format_netscape": {
+    "message": "cookies.txt"
+  },
+  "format_cqm": {
+    "message": "Cookie Quick Manager"
+  },
+  "format_playwright": {
+    "message": "Playwright"
+  },
+  "exportWarning": {
+    "message": "По экспортированным cookie кто угодно сможет войти в ваши аккаунты. Не передавайте их."
+  },
+  "importTitle": {
+    "message": "Импорт cookie"
+  },
+  "importHint": {
+    "message": "JSON из CookieTin, Cookie-Editor, EditThisCookie, Cookie Quick Manager или Playwright либо файл cookies.txt."
+  },
+  "chooseFile": {
+    "message": "Выбрать файл…"
+  },
+  "orPaste": {
+    "message": "или вставьте текст ниже"
+  },
+  "importFound": {
+    "message": "Найдено cookie: $P1$ ($P2$).",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      },
+      "p2": {
+        "content": "$2"
+      }
+    }
+  },
+  "importSkipped": {
+    "message": "Пропущено (истекли или не читаются): $P1$.",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "importUnreadable": {
+    "message": "Не получается прочитать это как cookie."
+  },
+  "importInto": {
+    "message": "Куда"
+  },
+  "importKeepStores": {
+    "message": "Контейнеры из файла"
+  },
+  "importProtect": {
+    "message": "Защитить импортированные cookie"
+  },
+  "importRun": {
+    "message": "Импортировать: $P1$",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "importedCount": {
+    "message": "Импортировано cookie: $P1$.",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "importFailed": {
+    "message": "Браузер не принял: $P1$.",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsTitle": {
+    "message": "Настройки"
+  },
+  "secCleanup": {
+    "message": "Автоматическая очистка"
+  },
+  "optDeleteOnStartup": {
+    "message": "Удалять cookie при запуске браузера"
+  },
+  "optDeleteOnStartupHint": {
+    "message": "Защищённые cookie останутся — вы не выйдете из нужных аккаунтов."
+  },
+  "optCleanup": {
+    "message": "Регулярная очистка"
+  },
+  "cleanupOff": {
+    "message": "Выключена"
+  },
+  "cleanupEvery": {
+    "message": "Каждые $P1$ ч",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "optKeepOpenTabs": {
+    "message": "Не трогать cookie сайтов, открытых во вкладках"
+  },
+  "optKeepOpenTabsHint": {
+    "message": "Чтобы очистка не разлогинила вас там, где вы сейчас работаете."
+  },
+  "cleanupNote": {
+    "message": "Защищённые cookie очистка никогда не удаляет."
+  },
+  "secProtection": {
+    "message": "Защищённые cookie"
+  },
+  "protectionText": {
+    "message": "Защищённые cookie переживают удаление и очистку в CookieTin. Защитить cookie можно в менеджере (кнопка с замком)."
+  },
+  "optGuard": {
+    "message": "Восстанавливать их, если сайт или браузер их удалит"
+  },
+  "optGuardHint": {
+    "message": "Например, когда сайт разлогинивает, стирая свой cookie."
+  },
+  "noProtected": {
+    "message": "Защищённых cookie пока нет."
+  },
+  "unprotectDomain": {
+    "message": "Снять защиту со всех cookie домена"
+  },
+  "secInterface": {
+    "message": "Интерфейс"
+  },
+  "optOpenIn": {
+    "message": "Открывать менеджер"
+  },
+  "openTab": {
+    "message": "Во вкладке"
+  },
+  "openWindow": {
+    "message": "В отдельном окне"
+  },
+  "optTheme": {
+    "message": "Тема"
+  },
+  "themeAuto": {
+    "message": "Как в системе"
+  },
+  "themeLight": {
+    "message": "Светлая"
+  },
+  "themeDark": {
+    "message": "Тёмная"
+  },
+  "optExportFormat": {
+    "message": "Формат экспорта по умолчанию"
+  },
+  "optConfirm": {
+    "message": "Спрашивать перед удалением нескольких cookie"
+  },
+  "optShowStoreDelete": {
+    "message": "Показывать «Удалить все cookie» в меню кнопки"
+  },
+  "optShowStoreDeleteHint": {
+    "message": "Выключите, если случайно на него нажимаете."
+  },
+  "optAutoRefresh": {
+    "message": "Обновлять менеджер на лету при изменении cookie"
+  },
+  "secPrivate": {
+    "message": "Приватные окна"
+  },
+  "privateAllowed": {
+    "message": "CookieTin видит cookie приватных окон, пока такое окно открыто."
+  },
+  "privateHowFirefox": {
+    "message": "Чтобы управлять cookie приватных окон, разрешите там CookieTin: «Дополнения и темы» → CookieTin → «Запуск в приватных окнах»."
+  },
+  "privateHowChrome": {
+    "message": "Чтобы управлять cookie режима инкогнито, откройте сведения о расширении и включите «Разрешить в режиме инкогнито»."
+  },
+  "secBackup": {
+    "message": "Резервная копия"
+  },
+  "backupText": {
+    "message": "Настройки и список защищённых cookie (сами cookie не сохраняются)."
+  },
+  "backupSave": {
+    "message": "Сохранить в файл"
+  },
+  "backupRestore": {
+    "message": "Восстановить из файла…"
+  },
+  "reset": {
+    "message": "Сбросить всё"
+  },
+  "resetConfirm": {
+    "message": "Сбросить настройки и забыть защищённые cookie?"
+  },
+  "resetDone": {
+    "message": "Всё сброшено."
+  },
+  "restoreDone": {
+    "message": "Восстановлено. Защищённых cookie в файле: $P1$.",
+    "placeholders": {
+      "p1": {
+        "content": "$1"
+      }
+    }
+  },
+  "restoreFailed": {
+    "message": "Это не резервная копия CookieTin или Cookie Quick Manager."
+  },
+  "migrateText": {
+    "message": "Переходите с Cookie Quick Manager? В его настройках нажмите «Backup user data» и восстановите файл здесь: защищённые cookie и настройки перенесутся."
+  },
+  "supportTitle": {
+    "message": "Поддержать CookieTin"
+  },
+  "supportText": {
+    "message": "CookieTin бесплатный, открытый, без рекламы и слежки. Если он экономит вам время, донат поможет его развивать."
+  },
+  "supportBoosty": {
+    "message": "Задонатить на Boosty"
+  },
+  "supportNetworkNote": {
+    "message": "Отправляйте только указанные монеты в указанной сети."
+  },
+  "basedOn": {
+    "message": "Основано на"
+  },
+  "byAuthor": {
+    "message": "от Ysard"
+  },
+  "privacy": {
+    "message": "Приватность"
+  }
+}
