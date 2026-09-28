@@ -57,7 +57,7 @@
 
 | Browser | How |
 |---|---|
-| **Firefox** (desktop and Android) | [Firefox Add-ons (AMO)](https://addons.mozilla.org/firefox/addon/cookietin/) |
+| **Firefox** (desktop and Android) | [Firefox Add-ons (AMO)](https://addons.mozilla.org/firefox/addon/cookietin-cookie-manager/), or the signed `cookietin-firefox-<version>.xpi` from [GitHub Releases](https://github.com/Perruer/cookietin/releases/latest): open it in Firefox and confirm |
 | **Microsoft Edge** | Manual install from [GitHub Releases](https://github.com/Perruer/cookietin/releases), the same steps as for Chrome at `edge://extensions` |
 | **Chrome, Brave, Vivaldi, Opera** and other Chromium browsers | Manual install from [GitHub Releases](https://github.com/Perruer/cookietin/releases), see below |
 
@@ -216,7 +216,7 @@ See [COPYRIGHT](COPYRIGHT) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
 ### Установка
 
-- **Firefox** (компьютер и Android): [Firefox Add-ons](https://addons.mozilla.org/firefox/addon/cookietin/)
+- **Firefox** (компьютер и Android): [Firefox Add-ons](https://addons.mozilla.org/firefox/addon/cookietin-cookie-manager/) или подписанный файл `cookietin-firefox-<версия>.xpi` со страницы [последнего релиза](https://github.com/Perruer/cookietin/releases/latest): откройте его в Firefox и подтвердите установку
 - **Microsoft Edge:** вручную из GitHub Releases, так же, как в Chrome, только на странице `edge://extensions`
 - **Chrome** и другие браузеры на Chromium (Brave, Vivaldi, Opera), вручную:
   1. Скачайте **`cookietin-chrome-<версия>.zip`** со страницы

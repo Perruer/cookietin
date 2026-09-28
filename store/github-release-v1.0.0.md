@@ -13,7 +13,7 @@ Body below the line.
 
 ## Install
 
-- **Firefox** (desktop and Android): [Firefox Add-ons](https://addons.mozilla.org/firefox/addon/cookietin/)
+- **Firefox** (desktop and Android): [Firefox Add-ons](https://addons.mozilla.org/firefox/addon/cookietin-cookie-manager/), or open **`cookietin-firefox-1.0.0.xpi`** below in Firefox (signed by Mozilla)
 - **Microsoft Edge:** the same steps as for Chrome below, at `edge://extensions`
 - **Chrome, Brave, Vivaldi, Opera:** download **`cookietin-chrome-1.0.0.zip`** below, then:
   1. Unzip it into a folder you will keep.

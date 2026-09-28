@@ -169,5 +169,5 @@ HOW TO TEST (no account needed)
 
 ## 6. After approval
 
-- Check the listing URL and update README (`https://addons.mozilla.org/firefox/addon/cookietin/`).
+- Check the listing URL and update README (`https://addons.mozilla.org/firefox/addon/cookietin-cookie-manager/`).
 - Attach the AMO-signed `.xpi` to the GitHub Release.
